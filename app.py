@@ -36,28 +36,51 @@ RISK_ORDER = ["Low", "Medium", "High", "Very_High"]
 # Dribbble Revenue App Theme Palettes
 THEMES = {
     "dark": {
-        "app_bg": "#0B0F19",
-        "card_bg": "rgba(17, 24, 39, 0.75)",
-        "card_border": "rgba(255, 255, 255, 0.08)",
-        "card_hover_border": "rgba(99, 102, 241, 0.35)",
-        "header_bg": "linear-gradient(135deg, rgba(17, 24, 39, 0.95) 0%, rgba(30, 27, 75, 0.85) 50%, rgba(15, 23, 42, 0.95) 100%)",
-        "text_main": "#F8FAFC",
-        "text_muted": "#94A3B8",
-        "text_faint": "#64748B",
-        "grid_color": "rgba(255, 255, 255, 0.05)",
-        "border_color": "rgba(255, 255, 255, 0.08)",
+        "app_bg": "#0B1020",
+        "card_bg": "rgba(17, 24, 39, 0.85)",
+        "card_border": "rgba(255, 255, 255, 0.12)",
+        "card_hover_border": "rgba(99, 102, 241, 0.45)",
+        "header_bg": "linear-gradient(135deg, rgba(17, 24, 39, 0.98) 0%, rgba(30, 27, 75, 0.9) 50%, rgba(15, 23, 42, 0.98) 100%)",
+        "text_main": "#FFFFFF",
+        "text_muted": "#D1D5DB",
+        "text_faint": "#9CA3AF",
+        "grid_color": "rgba(255, 255, 255, 0.08)",
+        "border_color": "rgba(255, 255, 255, 0.12)",
         "accent_purple": "#8B5CF6",
         "accent_indigo": "#6366F1",
         "accent_emerald": "#10B981",
         "accent_cyan": "#06B6D4",
         "accent_amber": "#F59E0B",
-        "accent_rose": "#F43F5E",
-        "sidebar_bg": "#0D1322",
-        "sidebar_border": "rgba(255, 255, 255, 0.06)",
-        "stat_pill_bg": "rgba(99, 102, 241, 0.12)",
-        "stat_pill_text": "#A5B4FC",
-        "badge_border": "rgba(99, 102, 241, 0.3)",
-        "tooltip_bg": "#0F172A",
+        "accent_rose": "#EF4444",
+        "sidebar_bg": "#111827",
+        "sidebar_border": "rgba(255, 255, 255, 0.1)",
+        "stat_pill_bg": "rgba(99, 102, 241, 0.16)",
+        "stat_pill_text": "#C7D2FE",
+        "badge_border": "rgba(99, 102, 241, 0.35)",
+        "tooltip_bg": "#1F2937",
+        # High-contrast inputs, dropdowns, and form controls
+        "input_bg": "#FFFFFF",
+        "input_text": "#111827",
+        "input_placeholder": "#6B7280",
+        "input_border": "#9CA3AF",
+        "input_focus_border": "#6366F1",
+        "dropdown_bg": "#FFFFFF",
+        "dropdown_text": "#111827",
+        "dropdown_hover_bg": "#F3F4F6",
+        "dropdown_hover_text": "#111827",
+        "dropdown_selected_bg": "#EEF2FF",
+        "dropdown_selected_text": "#312E81",
+        "tag_bg": "#EEF2FF",
+        "tag_text": "#1E1B4B",
+        "tag_border": "#C7D2FE",
+        "tag_delete_color": "#4338CA",
+        "label_text": "#FFFFFF",
+        "label_subtext": "#D1D5DB",
+        "radio_text": "#F3F4F6",
+        "slider_track_active": "#6366F1",
+        "slider_track_bg": "#374151",
+        "slider_thumb_color": "#6366F1",
+        "slider_value_text": "#FFFFFF",
     },
     "light": {
         "app_bg": "#F8FAFC",
@@ -82,6 +105,29 @@ THEMES = {
         "stat_pill_text": "#4F46E5",
         "badge_border": "rgba(99, 102, 241, 0.25)",
         "tooltip_bg": "#0F172A",
+        # High-contrast inputs, dropdowns, and form controls
+        "input_bg": "#FFFFFF",
+        "input_text": "#111827",
+        "input_placeholder": "#64748B",
+        "input_border": "#CBD5E1",
+        "input_focus_border": "#4F46E5",
+        "dropdown_bg": "#FFFFFF",
+        "dropdown_text": "#111827",
+        "dropdown_hover_bg": "#F1F5F9",
+        "dropdown_hover_text": "#111827",
+        "dropdown_selected_bg": "#EEF2FF",
+        "dropdown_selected_text": "#312E81",
+        "tag_bg": "#EEF2FF",
+        "tag_text": "#1E1B4B",
+        "tag_border": "#C7D2FE",
+        "tag_delete_color": "#4338CA",
+        "label_text": "#0F172A",
+        "label_subtext": "#475569",
+        "radio_text": "#1E293B",
+        "slider_track_active": "#4F46E5",
+        "slider_track_bg": "#E2E8F0",
+        "slider_thumb_color": "#4F46E5",
+        "slider_value_text": "#0F172A",
     },
 }
 
@@ -89,7 +135,7 @@ RISK_COLORS = {
     "Low": "#10B981",        # Emerald
     "Medium": "#06B6D4",     # Neon Cyan
     "High": "#F59E0B",       # Vivid Amber
-    "Very_High": "#F43F5E",  # Rose Coral
+    "Very_High": "#EF4444",  # High-Contrast Rose/Red
 }
 
 # ==============================================================================
@@ -106,7 +152,7 @@ st.set_page_config(
 # 3. DRIBBBLE REVENUE APP CSS INJECTION
 # ==============================================================================
 def apply_dribbble_theme(theme_mode: str = "dark") -> None:
-    """Injects high-finish Dribbble 'Revenue App' UI styling."""
+    """Injects high-finish Dribbble 'Revenue App' UI styling with crystal-clear form controls."""
     t = THEMES[theme_mode]
 
     is_dark = theme_mode == "dark"
@@ -136,12 +182,12 @@ def apply_dribbble_theme(theme_mode: str = "dark") -> None:
             --purple: #8B5CF6;
             --emerald: #10B981;
             --cyan: #06B6D4;
-            --rose: #F43F5E;
+            --rose: #EF4444;
             --amber: #F59E0B;
         }}
 
         /* Global Canvas */
-        html, body, [class*="css"], .stApp {{
+        html, body, .stApp {{
             font-family: var(--font-family) !important;
             background-color: var(--app-bg) !important;
             color: var(--text-main) !important;
@@ -365,7 +411,7 @@ def apply_dribbble_theme(theme_mode: str = "dark") -> None:
             left: 0;
             right: 0;
             height: 3px;
-            background: linear-gradient(90deg, #F43F5E, #E11D48);
+            background: linear-gradient(90deg, #EF4444, #E11D48);
         }}
 
         .rev-card-top {{
@@ -445,9 +491,9 @@ def apply_dribbble_theme(theme_mode: str = "dark") -> None:
         }}
 
         .trend-pill.alert {{
-            background: rgba(244, 63, 94, 0.15);
-            color: #FB7185;
-            border: 1px solid rgba(244, 63, 94, 0.3);
+            background: rgba(239, 68, 68, 0.15);
+            color: #F87171;
+            border: 1px solid rgba(239, 68, 68, 0.35);
         }}
 
         .trend-pill.warning {{
@@ -526,7 +572,7 @@ def apply_dribbble_theme(theme_mode: str = "dark") -> None:
         .insight-pill-card.emerald {{ border-left-color: #10B981; }}
         .insight-pill-card.amber {{ border-left-color: #F59E0B; }}
         .insight-pill-card.cyan {{ border-left-color: #06B6D4; }}
-        .insight-pill-card.rose {{ border-left-color: #F43F5E; }}
+        .insight-pill-card.rose {{ border-left-color: #EF4444; }}
 
         .insight-header {{
             display: flex;
@@ -594,9 +640,9 @@ def apply_dribbble_theme(theme_mode: str = "dark") -> None:
             border: 1px solid rgba(245, 158, 11, 0.35);
         }}
         .profile-badge-pill.Very_High {{
-            background: rgba(244, 63, 94, 0.2);
-            color: #FDA4AF;
-            border: 1px solid rgba(244, 63, 94, 0.35);
+            background: rgba(239, 68, 68, 0.2);
+            color: #FCA5A5;
+            border: 1px solid rgba(239, 68, 68, 0.4);
         }}
 
         /* Data Ledger Note */
@@ -645,6 +691,325 @@ def apply_dribbble_theme(theme_mode: str = "dark") -> None:
         section[data-testid="stSidebar"] {{
             background-color: {t["sidebar_bg"]} !important;
             border-right: 1px solid {t["sidebar_border"]} !important;
+        }}
+
+        /* ============================================================== */
+        /* HIGH-CONTRAST FORM CONTROLS & DROPDOWN COMPONENT STYLING       */
+        /* ============================================================== */
+
+        /* 1. All Labels (Sidebar and Main Canvas) */
+        div[data-testid="stWidgetLabel"] label,
+        div[data-testid="stWidgetLabel"] p,
+        div[data-testid="stWidgetLabel"] span,
+        label[data-testid="stWidgetLabel"] {{
+            color: {t["label_text"]} !important;
+            font-weight: 700 !important;
+            font-size: 0.85rem !important;
+            letter-spacing: -0.01em !important;
+            margin-bottom: 0.35rem !important;
+        }}
+
+        /* Tooltip icons */
+        div[data-testid="stTooltipIcon"] svg {{
+            fill: {t["text_muted"]} !important;
+            opacity: 0.85 !important;
+        }}
+        div[data-testid="stTooltipIcon"]:hover svg {{
+            fill: {t["label_text"]} !important;
+            opacity: 1 !important;
+        }}
+
+        /* 2. Text Inputs (Country Search & Ledger Search) */
+        div[data-testid="stTextInput"] div[data-baseweb="input"],
+        div[data-testid="stTextInput"] div[data-baseweb="base-input"],
+        div[data-testid="stTextInput"] > div > div {{
+            background-color: {t["input_bg"]} !important;
+            border: 1.5px solid {t["input_border"]} !important;
+            border-radius: 10px !important;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06) !important;
+            transition: all 0.18s ease-in-out !important;
+        }}
+
+        div[data-testid="stTextInput"] div[data-baseweb="input"]:focus-within,
+        div[data-testid="stTextInput"] div[data-baseweb="base-input"]:focus-within,
+        div[data-testid="stTextInput"] > div > div:focus-within {{
+            border-color: {t["input_focus_border"]} !important;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.28) !important;
+        }}
+
+        div[data-testid="stTextInput"] input {{
+            color: {t["input_text"]} !important;
+            background-color: transparent !important;
+            font-size: 0.88rem !important;
+            font-weight: 600 !important;
+            padding: 0.5rem 0.75rem !important;
+        }}
+
+        div[data-testid="stTextInput"] input::placeholder {{
+            color: {t["input_placeholder"]} !important;
+            opacity: 1 !important;
+            font-weight: 500 !important;
+        }}
+
+        div[data-testid="stTextInput"] button svg {{
+            fill: {t["input_placeholder"]} !important;
+        }}
+        div[data-testid="stTextInput"] button:hover svg {{
+            fill: {t["input_text"]} !important;
+        }}
+
+        /* 3. Selectbox & Multiselect Controls (Closed state) */
+        div[data-testid="stSelectbox"] div[data-baseweb="select"] > div,
+        div[data-testid="stMultiSelect"] div[data-baseweb="select"] > div {{
+            background-color: {t["input_bg"]} !important;
+            border: 1.5px solid {t["input_border"]} !important;
+            border-radius: 10px !important;
+            min-height: 42px !important;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06) !important;
+            transition: all 0.18s ease-in-out !important;
+        }}
+
+        div[data-testid="stSelectbox"] div[data-baseweb="select"] > div:hover,
+        div[data-testid="stMultiSelect"] div[data-baseweb="select"] > div:hover {{
+            border-color: {t["input_focus_border"]} !important;
+        }}
+
+        div[data-testid="stSelectbox"] div[data-baseweb="select"]:focus-within > div,
+        div[data-testid="stMultiSelect"] div[data-baseweb="select"]:focus-within > div {{
+            border-color: {t["input_focus_border"]} !important;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.28) !important;
+        }}
+
+        /* Single select display value */
+        div[data-testid="stSelectbox"] div[data-baseweb="select"] [aria-selected="true"],
+        div[data-testid="stSelectbox"] div[data-baseweb="select"] div[class*="singleValue"],
+        div[data-testid="stSelectbox"] div[data-baseweb="select"] span {{
+            color: {t["input_text"]} !important;
+            font-weight: 600 !important;
+            font-size: 0.88rem !important;
+        }}
+
+        /* Multiselect search input */
+        div[data-testid="stMultiSelect"] div[data-baseweb="select"] input,
+        div[data-testid="stSelectbox"] div[data-baseweb="select"] input {{
+            color: {t["input_text"]} !important;
+            font-weight: 600 !important;
+            font-size: 0.88rem !important;
+        }}
+
+        /* Placeholder in selectbox & multiselect */
+        div[data-testid="stSelectbox"] div[data-baseweb="select"] [data-placeholder="true"],
+        div[data-testid="stMultiSelect"] div[data-baseweb="select"] [data-placeholder="true"],
+        div[data-testid="stMultiSelect"] div[data-baseweb="select"] input::placeholder,
+        div[data-testid="stSelectbox"] div[data-baseweb="select"] input::placeholder {{
+            color: {t["input_placeholder"]} !important;
+            opacity: 1 !important;
+            font-weight: 500 !important;
+        }}
+
+        /* Dropdown arrow and clear icons */
+        div[data-testid="stSelectbox"] svg,
+        div[data-testid="stMultiSelect"] svg {{
+            fill: {t["input_placeholder"]} !important;
+            color: {t["input_placeholder"]} !important;
+        }}
+        div[data-testid="stSelectbox"]:hover svg,
+        div[data-testid="stMultiSelect"]:hover svg {{
+            fill: {t["input_text"]} !important;
+            color: {t["input_text"]} !important;
+        }}
+
+        /* 4. Multiselect Selected Tags */
+        div[data-baseweb="tag"],
+        span[data-baseweb="tag"] {{
+            background-color: {t["tag_bg"]} !important;
+            border: 1px solid {t["tag_border"]} !important;
+            border-radius: 6px !important;
+            padding: 0.18rem 0.55rem !important;
+            margin: 2px 4px 2px 0 !important;
+        }}
+
+        div[data-baseweb="tag"] span,
+        span[data-baseweb="tag"] span,
+        div[data-baseweb="tag"] [title] {{
+            color: {t["tag_text"]} !important;
+            font-weight: 700 !important;
+            font-size: 0.78rem !important;
+        }}
+
+        div[data-baseweb="tag"] [role="presentation"],
+        div[data-baseweb="tag"] button,
+        div[data-baseweb="tag"] svg {{
+            fill: {t["tag_delete_color"]} !important;
+            color: {t["tag_delete_color"]} !important;
+        }}
+
+        div[data-baseweb="tag"] [role="presentation"]:hover svg,
+        div[data-baseweb="tag"] button:hover svg {{
+            fill: #EF4444 !important;
+            color: #EF4444 !important;
+        }}
+
+        /* 5. The Dropdown Popup Menu & Popover Options (Rendered in Portal) */
+        div[data-baseweb="popover"],
+        div[data-testid="stSelectboxVirtualDropdown"] {{
+            background-color: transparent !important;
+            border-radius: 12px !important;
+            box-shadow: 0 20px 45px -5px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.12) !important;
+            overflow: hidden !important;
+            z-index: 999999 !important;
+        }}
+
+        div[data-baseweb="popover"] div[data-baseweb="menu"],
+        div[data-baseweb="popover"] ul[data-baseweb="menu"],
+        div[data-baseweb="popover"] ul[role="listbox"],
+        ul[data-baseweb="menu"],
+        ul[role="listbox"] {{
+            background-color: {t["dropdown_bg"]} !important;
+            border: 1.5px solid {t["input_border"]} !important;
+            border-radius: 12px !important;
+            padding: 0.4rem !important;
+            max-height: 280px !important;
+        }}
+
+        /* Option Items */
+        div[data-baseweb="popover"] li[role="option"],
+        div[data-baseweb="popover"] div[role="option"],
+        div[data-baseweb="popover"] li[data-baseweb="menu-item"],
+        div[data-baseweb="menu"] li,
+        ul[role="listbox"] li {{
+            background-color: transparent !important;
+            color: {t["dropdown_text"]} !important;
+            font-size: 0.86rem !important;
+            font-weight: 600 !important;
+            border-radius: 8px !important;
+            padding: 0.55rem 0.85rem !important;
+            margin-bottom: 2px !important;
+            cursor: pointer !important;
+            transition: all 0.12s ease !important;
+        }}
+
+        div[data-baseweb="popover"] li[role="option"] *,
+        div[data-baseweb="popover"] div[role="option"] *,
+        div[data-baseweb="popover"] li[data-baseweb="menu-item"] *,
+        ul[role="listbox"] li * {{
+            color: {t["dropdown_text"]} !important;
+            font-weight: 600 !important;
+        }}
+
+        /* Option Hover & Highlighted State */
+        div[data-baseweb="popover"] li[role="option"]:hover,
+        div[data-baseweb="popover"] div[role="option"]:hover,
+        div[data-baseweb="popover"] li[data-baseweb="menu-item"]:hover,
+        div[data-baseweb="popover"] li[data-highlighted="true"],
+        ul[role="listbox"] li:hover,
+        ul[role="listbox"] li[data-highlighted="true"] {{
+            background-color: {t["dropdown_hover_bg"]} !important;
+            color: {t["dropdown_hover_text"]} !important;
+        }}
+
+        div[data-baseweb="popover"] li[role="option"]:hover *,
+        div[data-baseweb="popover"] div[role="option"]:hover *,
+        div[data-baseweb="popover"] li[data-baseweb="menu-item"]:hover *,
+        div[data-baseweb="popover"] li[data-highlighted="true"] *,
+        ul[role="listbox"] li:hover *,
+        ul[role="listbox"] li[data-highlighted="true"] * {{
+            color: {t["dropdown_hover_text"]} !important;
+        }}
+
+        /* Option Selected State */
+        div[data-baseweb="popover"] li[role="option"][aria-selected="true"],
+        div[data-baseweb="popover"] div[role="option"][aria-selected="true"],
+        ul[role="listbox"] li[aria-selected="true"] {{
+            background-color: {t["dropdown_selected_bg"]} !important;
+            color: {t["dropdown_selected_text"]} !important;
+            font-weight: 700 !important;
+        }}
+
+        div[data-baseweb="popover"] li[role="option"][aria-selected="true"] *,
+        div[data-baseweb="popover"] div[role="option"][aria-selected="true"] *,
+        ul[role="listbox"] li[aria-selected="true"] * {{
+            color: {t["dropdown_selected_text"]} !important;
+            font-weight: 700 !important;
+        }}
+
+        /* 6. Radio Buttons (Theme Switcher) */
+        div[data-testid="stRadio"] [role="radiogroup"] {{
+            gap: 0.5rem !important;
+        }}
+        div[data-testid="stRadio"] [role="radiogroup"] label {{
+            background: {'rgba(255, 255, 255, 0.05)' if is_dark else '#F8FAFC'} !important;
+            border: 1px solid {'rgba(255, 255, 255, 0.12)' if is_dark else '#CBD5E1'} !important;
+            border-radius: 10px !important;
+            padding: 0.45rem 0.85rem !important;
+            cursor: pointer !important;
+            transition: all 0.15s ease !important;
+        }}
+        div[data-testid="stRadio"] [role="radiogroup"] label:hover {{
+            border-color: {t["accent_indigo"]} !important;
+            background: {'rgba(99, 102, 241, 0.1)' if is_dark else '#EEF2FF'} !important;
+        }}
+        div[data-testid="stRadio"] [role="radiogroup"] label p,
+        div[data-testid="stRadio"] [role="radiogroup"] label div {{
+            color: {t["radio_text"]} !important;
+            font-weight: 600 !important;
+            font-size: 0.84rem !important;
+        }}
+        div[data-testid="stRadio"] input:checked + div {{
+            border-color: {t["accent_indigo"]} !important;
+        }}
+
+        /* 7. Sliders (Recycling & Waste Volume) */
+        div[data-testid="stSlider"] div[data-baseweb="slider"] {{
+            margin-top: 0.4rem !important;
+        }}
+        div[data-testid="stSlider"] [role="slider"] {{
+            background-color: {t["slider_thumb_color"]} !important;
+            border: 2px solid #FFFFFF !important;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35) !important;
+        }}
+        div[data-testid="stSlider"] div[data-testid="stSliderTickBar"] {{
+            color: {t["text_muted"]} !important;
+        }}
+        div[data-testid="stSlider"] div[data-testid="stSliderThumbValue"] {{
+            color: {t["slider_value_text"]} !important;
+            font-weight: 700 !important;
+            font-size: 0.78rem !important;
+            background: {'#1F2937' if is_dark else '#F1F5F9'} !important;
+            border: 1px solid {'rgba(255, 255, 255, 0.18)' if is_dark else '#CBD5E1'} !important;
+            border-radius: 6px !important;
+            padding: 0.12rem 0.45rem !important;
+        }}
+        div[data-testid="stSlider"] [data-testid="stMarkdownContainer"] p {{
+            color: {t["text_muted"]} !important;
+            font-weight: 600 !important;
+            font-size: 0.78rem !important;
+        }}
+
+        /* 8. Reset All Parameters Button */
+        section[data-testid="stSidebar"] div[data-testid="stButton"] button {{
+            background: {'rgba(255, 255, 255, 0.08)' if is_dark else '#F1F5F9'} !important;
+            color: {t["text_main"]} !important;
+            border: 1px solid {'rgba(255, 255, 255, 0.18)' if is_dark else '#CBD5E1'} !important;
+            border-radius: 10px !important;
+            font-weight: 700 !important;
+            font-size: 0.84rem !important;
+            padding: 0.55rem 1rem !important;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+            transition: all 0.18s ease !important;
+        }}
+        section[data-testid="stSidebar"] div[data-testid="stButton"] button:hover {{
+            background: {'rgba(99, 102, 241, 0.25)' if is_dark else '#E0E7FF'} !important;
+            border-color: {t["accent_indigo"]} !important;
+            color: {'#FFFFFF' if is_dark else '#4338CA'} !important;
+            transform: translateY(-1px) !important;
+        }}
+
+        /* 9. Dataframe / Tables */
+        div[data-testid="stDataFrame"] {{
+            border: 1px solid {card_border} !important;
+            border-radius: 14px !important;
+            overflow: hidden !important;
         }}
 
         /* Tabs Styling (Dribbble Segmented Style) */
@@ -854,19 +1219,6 @@ def apply_dribbble_chart_theme(
 # ==============================================================================
 def render_sidebar(df: pd.DataFrame) -> Tuple[pd.DataFrame, Dict[str, Any], str]:
     """Renders the sleek Dribbble parameter control panel and returns filtered data and theme."""
-    st.sidebar.markdown(
-        """
-        <div style="padding-bottom: 0.8rem; margin-bottom: 1rem; border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
-            <div style="display:flex; align-items:center; gap:0.5rem;">
-                <span style="font-size:1.15rem;">⚡</span>
-                <span style="font-size:1.05rem; font-weight:800; letter-spacing:-0.02em;">Revenue.OS Control</span>
-            </div>
-            <div style="font-size:0.72rem; color:#94A3B8; margin-top:0.2rem;">Fintech & Eco-Analytics Parameters</div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
     # Theme Switcher (Dribbble Dark Mode vs Clean Fintech Light)
     theme_choice = st.sidebar.radio(
         "UI Aesthetic Mode",
@@ -876,8 +1228,22 @@ def render_sidebar(df: pd.DataFrame) -> Tuple[pd.DataFrame, Dict[str, Any], str]
         label_visibility="visible",
     )
     theme_mode = "dark" if "Dark" in theme_choice else "light"
+    is_dark = theme_mode == "dark"
 
-    st.sidebar.markdown("<div style='height: 0.5rem;'></div>", unsafe_allow_html=True)
+    st.sidebar.markdown(
+        f"""
+        <div style="padding-bottom: 0.8rem; margin-bottom: 1rem; border-bottom: 1px solid {'rgba(255, 255, 255, 0.12)' if is_dark else '#CBD5E1'};">
+            <div style="display:flex; align-items:center; gap:0.5rem;">
+                <span style="font-size:1.15rem;">⚡</span>
+                <span style="font-size:1.05rem; font-weight:800; letter-spacing:-0.02em; color:{'#FFFFFF' if is_dark else '#0F172A'};">Revenue.OS Control</span>
+            </div>
+            <div style="font-size:0.74rem; color:{'#94A3B8' if is_dark else '#475569'}; margin-top:0.2rem; font-weight:600;">Fintech & Eco-Analytics Parameters</div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    st.sidebar.markdown("<div style='height: 0.25rem;'></div>", unsafe_allow_html=True)
 
     # Reset Filters Button
     if st.sidebar.button("↺ Reset All Parameters", use_container_width=True, type="secondary"):
@@ -1941,11 +2307,15 @@ def main() -> None:
     # Load dataset
     df, meta = load_dataset(CSV_PATH)
 
+    # Determine theme preference early to inject CSS immediately
+    theme_choice = st.session_state.get("theme_radio", "Dribbble Dark (Obsidian)")
+    early_theme_mode = "dark" if "Dark" in str(theme_choice) else "light"
+    apply_dribbble_theme(early_theme_mode)
+
     # Render Sidebar and extract filtered data + chosen theme
     filtered_df, filter_info, theme_mode = render_sidebar(df)
-
-    # Apply Dribbble Revenue Theme CSS
-    apply_dribbble_theme(theme_mode)
+    if theme_mode != early_theme_mode:
+        apply_dribbble_theme(theme_mode)
 
     # Handle missing or invalid dataset safely
     if meta["status"] != "success":
