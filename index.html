@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Revenue.OS // Plastic Waste Intelligence</title>
+  <meta name="description" content="Executive environmental analytics dashboard analyzing global plastic waste, recycling efficiency, and coastal vulnerability across 165 nations." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  
+  <!-- Stlite CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@stlite/browser@1.12.0/build/stlite.css" />
+  
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #0B0F19;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      color: #F8FAFC;
+      overflow-x: hidden;
+    }
+    #root {
+      min-height: 100vh;
+      width: 100%;
+    }
+    #loading-indicator {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at 50% 35%, #1e1b4b 0%, #0b0f19 80%);
+      z-index: 99999;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+    }
+    .loading-spinner {
+      width: 50px;
+      height: 50px;
+      border: 3.5px solid rgba(99, 102, 241, 0.2);
+      border-top-color: #6366F1;
+      border-radius: 50%;
+      animation: stlite-spin 0.9s cubic-bezier(0.55, 0.25, 0.25, 0.7) infinite;
+      margin-bottom: 22px;
+    }
+    @keyframes stlite-spin {
+      to { transform: rotate(360deg); }
+    }
+    .loading-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 6px;
+      color: #F8FAFC;
+    }
+    .loading-subtitle {
+      font-size: 0.85rem;
+      color: #94A3B8;
+      max-width: 380px;
+      text-align: center;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div id="loading-indicator">
+    <div class="loading-spinner"></div>
+    <div class="loading-title">⚡ Revenue.OS // Plastic Waste Intelligence</div>
+    <div class="loading-subtitle">Initializing browser WebAssembly engine and mounting 165 country dataset...</div>
+  </div>
+
+  <div id="root"></div>
+
+  <!-- Stlite Module Bootstrap -->
+  <script type="module">
+    import { mount } from "https://cdn.jsdelivr.net/npm/@stlite/browser@1.12.0/build/stlite.js";
+
+    try {
+      mount(
+        {
+          entrypoint: "app.py",
+          files: {
+            "app.py": {
+              url: "./app.py",
+            },
+            "Plastic Waste Around the World.csv": {
+              url: "./Plastic%20Waste%20Around%20the%20World.csv",
+            },
+          },
+          requirements: ["pandas", "plotly"],
+          streamlitConfig: {
+            "theme.base": "dark",
+            "theme.primaryColor": "#6366F1",
+            "theme.backgroundColor": "#0B0F19",
+            "theme.secondaryBackgroundColor": "#111827",
+            "theme.textColor": "#F8FAFC"
+          }
+        },
+        document.getElementById("root")
+      );
+
+      // Hide loading spinner once the Streamlit container is populated
+      const observer = new MutationObserver((mutations, obs) => {
+        const appElem = document.querySelector(".stApp") || document.querySelector(".stlite-app-container");
+        if (appElem && appElem.children.length > 0) {
+          const loader = document.getElementById("loading-indicator");
+          if (loader) {
+            loader.style.opacity = "0";
+            loader.style.visibility = "hidden";
+            setTimeout(() => loader.remove(), 400);
+          }
+          obs.disconnect();
+        }
+      });
+      observer.observe(document.getElementById("root"), { childList: true, subtree: true });
+    } catch (err) {
+      console.error("Failed to mount stlite:", err);
+      const sub = document.querySelector(".loading-subtitle");
+      if (sub) {
+        sub.textContent = "Error initializing dashboard: " + err.message;
+        sub.style.color = "#F43F5E";
+      }
+    }
+  </script>
+</body>
+</html>

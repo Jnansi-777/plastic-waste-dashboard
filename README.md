@@ -11,8 +11,32 @@ DASHBOARD/
 ├── app.py                             # Main Streamlit dashboard application
 ├── requirements.txt                   # Core dependencies (pandas, plotly, streamlit)
 ├── Plastic Waste Around the World.csv # Authentic country dataset (165 country records)
-└── README.md                          # Project documentation and run guide
+├── index.html                         # Vercel / WebAssembly (stlite) client-side runner
+├── vercel.json                        # Vercel deployment & security headers config
+├── .gitignore                         # Clean git repository exclusions
+└── README.md                          # Project documentation and deployment guide
 ```
+
+---
+
+## ⚡ Deployment Options
+
+### Option A: Deploy on Vercel (Zero-Server WebAssembly via stlite)
+This repository is configured to deploy directly to **Vercel** as a static WebAssembly application:
+1. Go to [vercel.com/new](https://vercel.com/new).
+2. Connect your GitHub account and import **`Jnansi-777/plastic-waste-dashboard`**.
+3. Under **Configure Project**:
+   - **Framework Preset**: `Other` (or leave default).
+   - **Root Directory**: `./` (default).
+   - **Build Command**: Leave blank.
+   - **Output Directory**: Leave blank.
+4. Click **Deploy**. Vercel will build and assign a live `*.vercel.app` URL running the full Streamlit dashboard entirely client-side!
+
+### Option B: Deploy on Streamlit Community Cloud
+Deploy as a native Python container service:
+1. Visit the pre-configured [Streamlit Community Cloud Deployment](https://share.streamlit.io/deploy?repository=Jnansi-777/plastic-waste-dashboard&branch=main&mainModule=app.py).
+2. Authorize with your GitHub account.
+3. Click **Deploy!**.
 
 ---
 
