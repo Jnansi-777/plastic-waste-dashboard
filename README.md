@@ -21,16 +21,16 @@ DASHBOARD/
 
 ## ⚡ Deployment Options
 
-### Option A: Deploy on Vercel (Zero-Server WebAssembly via stlite)
-This repository is configured to deploy directly to **Vercel** as a static WebAssembly application:
+### Option A: Deploy on Vercel (Instant Zero-Server Web Application)
+This repository is configured to deploy directly to **Vercel** as a high-performance, instant static web application:
 1. Go to [vercel.com/new](https://vercel.com/new).
 2. Connect your GitHub account and import **`Jnansi-777/plastic-waste-dashboard`**.
 3. Under **Configure Project**:
-   - **Framework Preset**: `Other` (or leave default).
+   - **Framework Preset**: `Other` (or default, automatically recognized via `vercel.json`).
    - **Root Directory**: `./` (default).
    - **Build Command**: Leave blank.
    - **Output Directory**: Leave blank.
-4. Click **Deploy**. Vercel will build and assign a live `*.vercel.app` URL running the full Streamlit dashboard entirely client-side!
+4. Click **Deploy**. Vercel will deploy and assign a live `*.vercel.app` URL running the full executive analytics dashboard instantly!
 
 ### Option B: Deploy on Streamlit Community Cloud
 Deploy as a native Python container service:

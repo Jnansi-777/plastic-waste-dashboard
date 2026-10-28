@@ -1,0 +1,11 @@
+# Exclude Python runtime artifacts and local Streamlit scripts from Vercel deployment
+# This guarantees Vercel deploys purely as an instant static web application with 0 build errors
+app.py
+*.py
+requirements.txt
+.streamlit/
+.venv/
+venv/
+plastic-waste-dashboard/
+__pycache__/
+*.pyc

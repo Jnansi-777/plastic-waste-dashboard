@@ -1,129 +1,569 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Revenue.OS // Plastic Waste Intelligence</title>
-  <meta name="description" content="Executive environmental analytics dashboard analyzing global plastic waste, recycling efficiency, and coastal vulnerability across 165 nations." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Revenue.OS // Plastic Waste & Circular Intelligence</title>
+  <meta name="description" content="Executive environmental analytics dashboard analyzing global plastic waste footprints, recycling margins, per-capita leakage, and circular economy asset valuation across 165 nations." />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
   
-  <!-- Stlite CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@stlite/browser@1.12.0/build/stlite.css" />
-  
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #0B0F19;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-      color: #F8FAFC;
-      overflow-x: hidden;
-    }
-    #root {
-      min-height: 100vh;
-      width: 100%;
-    }
-    #loading-indicator {
-      position: fixed;
-      inset: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: radial-gradient(circle at 50% 35%, #1e1b4b 0%, #0b0f19 80%);
-      z-index: 99999;
-      transition: opacity 0.4s ease, visibility 0.4s ease;
-    }
-    .loading-spinner {
-      width: 50px;
-      height: 50px;
-      border: 3.5px solid rgba(99, 102, 241, 0.2);
-      border-top-color: #6366F1;
-      border-radius: 50%;
-      animation: stlite-spin 0.9s cubic-bezier(0.55, 0.25, 0.25, 0.7) infinite;
-      margin-bottom: 22px;
-    }
-    @keyframes stlite-spin {
-      to { transform: rotate(360deg); }
-    }
-    .loading-title {
-      font-size: 1.2rem;
-      font-weight: 700;
-      letter-spacing: -0.01em;
-      margin-bottom: 6px;
-      color: #F8FAFC;
-    }
-    .loading-subtitle {
-      font-size: 0.85rem;
-      color: #94A3B8;
-      max-width: 380px;
-      text-align: center;
-      line-height: 1.4;
-    }
-  </style>
+  <!-- Modern Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Plotly.js Official CDN -->
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
 </head>
 <body>
-  <div id="loading-indicator">
-    <div class="loading-spinner"></div>
-    <div class="loading-title">⚡ Revenue.OS // Plastic Waste Intelligence</div>
-    <div class="loading-subtitle">Initializing browser WebAssembly engine and mounting 165 country dataset...</div>
+
+  <div class="dashboard-layout">
+    
+    <!-- LEFT SIDEBAR PARAMETER CONTROL PANEL -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-title-wrap">
+          <span class="brand-icon">⚡</span>
+          <div>
+            <div class="brand-title">Revenue.OS</div>
+            <div class="brand-sub">Fintech & Eco-Analytics</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Theme Switcher -->
+      <div>
+        <div class="filter-label">
+          <span>UI Aesthetic Mode</span>
+        </div>
+        <div class="theme-toggle-group">
+          <button type="button" class="theme-btn active" id="theme-dark-btn">
+            <span>🌙</span> Obsidian
+          </button>
+          <button type="button" class="theme-btn" id="theme-light-btn">
+            <span>☀️</span> Fintech
+          </button>
+        </div>
+      </div>
+
+      <!-- Reset Button -->
+      <button type="button" class="btn-reset" id="btn-reset-filters">
+        <span>↺</span> Reset All Parameters
+      </button>
+
+      <!-- Filter Controls -->
+      <div class="filter-section">
+        
+        <!-- 1. Country Name Search -->
+        <div>
+          <label class="filter-label" for="sidebar-search">
+            <span>🔍 Country Search</span>
+            <span class="filter-badge">Instant</span>
+          </label>
+          <input type="text" id="sidebar-search" class="form-input" placeholder="Type country name..." />
+        </div>
+
+        <!-- 2. Specific Nations Multiselect -->
+        <div>
+          <label class="filter-label" for="nation-select">
+            <span>🌐 Filter Specific Nations</span>
+          </label>
+          <select id="nation-select" class="form-input">
+            <option value="">+ Add nation to filter...</option>
+          </select>
+          <div class="filter-chips" id="nation-chips-wrap"></div>
+        </div>
+
+        <!-- 3. Coastal Waste Risk Category -->
+        <div>
+          <div class="filter-label">
+            <span>🌊 Coastal Leakage Risk</span>
+          </div>
+          <div class="checkbox-grid">
+            <label class="custom-checkbox">
+              <input type="checkbox" class="risk-filter-cb" value="Low" />
+              <span style="color:#10B981; font-weight:700;">Low</span>
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" class="risk-filter-cb" value="Medium" />
+              <span style="color:#06B6D4; font-weight:700;">Medium</span>
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" class="risk-filter-cb" value="High" />
+              <span style="color:#F59E0B; font-weight:700;">High</span>
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" class="risk-filter-cb" value="Very_High" />
+              <span style="color:#EF4444; font-weight:700;">Very High</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- 4. Material Source Sector -->
+        <div>
+          <div class="filter-label">
+            <span>🏭 Source Sectors</span>
+          </div>
+          <div class="filter-chips" id="sources-filter-grid" style="max-height: 140px;"></div>
+        </div>
+
+        <!-- 5. Recycling Efficiency Slider -->
+        <div class="range-slider-wrap">
+          <div class="filter-label">
+            <span>♻️ Recycling Efficiency</span>
+            <span class="filter-badge" id="disp-rec-val">0.1% — 84.8%</span>
+          </div>
+          <input type="range" id="slider-rec-min" class="range-input" min="0.1" max="84.8" step="0.1" value="0.1" />
+          <input type="range" id="slider-rec-max" class="range-input" min="0.1" max="84.8" step="0.1" value="84.8" />
+        </div>
+
+        <!-- 6. Total Waste Volume Slider -->
+        <div class="range-slider-wrap">
+          <div class="filter-label">
+            <span>📦 Waste Volume (MT)</span>
+            <span class="filter-badge" id="disp-waste-val">0.01 — 59.08 MT</span>
+          </div>
+          <input type="range" id="slider-waste-min" class="range-input" min="0.01" max="59.08" step="0.1" value="0.01" />
+          <input type="range" id="slider-waste-max" class="range-input" min="0.01" max="59.08" step="0.1" value="59.08" />
+        </div>
+
+      </div>
+
+      <!-- Feed Status Pill -->
+      <div class="feed-status-pill">
+        <div class="feed-title">Feed Status</div>
+        <div class="feed-count" id="feed-active-count">165 <span style="font-size:0.8rem; font-weight:500; color:var(--text-faint);">/ 165 nations</span></div>
+        <div class="feed-coverage" id="feed-coverage-val">● 100.0% Global Coverage Active</div>
+      </div>
+    </aside>
+
+    <!-- MAIN DASHBOARD CONTENT -->
+    <main class="main-content">
+      
+      <!-- Top Application Header -->
+      <header class="revenue-app-header">
+        <div class="nav-meta-row">
+          <div class="nav-meta-left">
+            <span class="brand-badge"><span class="live-dot"></span> REVENUE.OS // CIRCULAR INTELLIGENCE</span>
+            <span class="pill-chip">Workspace: Global Environmental</span>
+            <span class="pill-chip">Ledger: 165 Verified Nations</span>
+          </div>
+          <div class="nav-meta-right">
+            <span class="pill-chip" id="header-mode-badge">⚡ Mode: DARK</span>
+            <span class="pill-chip">Status: 100% Authentic CSV</span>
+          </div>
+        </div>
+        <div class="header-main-row">
+          <h1 class="app-title"><span class="app-title-gradient">Global Revenue & Waste Intelligence</span></h1>
+          <p class="app-subtitle">
+            Comprehensive fintech-grade analytics on country-level plastic footprints, recycling margins,
+            per-capita leakage, and circular economy asset valuation.
+          </p>
+        </div>
+      </header>
+
+      <!-- Ledger Source Status Banner -->
+      <div class="ledger-banner">
+        <span>
+          <b>Dataset Feed:</b> <code>Plastic Waste Around the World.csv</code> &nbsp;|&nbsp; 
+          Active Scope: <b id="banner-scope-count">165</b> of <b>165</b> nations (<span id="banner-scope-pct">100.0%</span>) matching current parameters.
+        </span>
+        <span style="font-size:0.72rem; font-family:var(--font-mono); color:var(--emerald); font-weight:700;">
+          ● DIRECT CALCULATION ENGINE
+        </span>
+      </div>
+
+      <!-- 1. The 5 Hero SaaS Revenue KPI Cards -->
+      <section class="kpi-cards-grid">
+        <!-- 1. Waste Generation -->
+        <div class="rev-card rev-card-glow-indigo">
+          <div class="rev-card-top">
+            <span class="rev-card-label">Waste Generation</span>
+            <div class="rev-card-icon-badge">📦</div>
+          </div>
+          <div class="rev-card-val" id="kpi-waste-val">284.38 <span class="rev-card-unit">MT</span></div>
+          <div class="rev-card-trend-row">
+            <span class="trend-pill neutral" id="kpi-waste-trend">100.0% Global Share</span>
+            <span class="rev-card-caption">National reported</span>
+          </div>
+        </div>
+
+        <!-- 2. Recycling Margin -->
+        <div class="rev-card rev-card-glow-emerald">
+          <div class="rev-card-top">
+            <span class="rev-card-label">Recycling Margin</span>
+            <div class="rev-card-icon-badge">♻️</div>
+          </div>
+          <div class="rev-card-val" id="kpi-rec-val">13.10<span class="rev-card-unit">%</span></div>
+          <div class="rev-card-trend-row">
+            <span class="trend-pill positive" id="kpi-rec-trend">+0.0% vs BM</span>
+            <span class="rev-card-caption">Mean efficiency</span>
+          </div>
+        </div>
+
+        <!-- 3. Circular Valuation -->
+        <div class="rev-card rev-card-glow-cyan">
+          <div class="rev-card-top">
+            <span class="rev-card-label">Circular Valuation</span>
+            <div class="rev-card-icon-badge">💎</div>
+          </div>
+          <div class="rev-card-val" id="kpi-val-val">$42,352.1 <span class="rev-card-unit">M</span></div>
+          <div class="rev-card-trend-row">
+            <span class="trend-pill positive">Recoverable Asset</span>
+            <span class="rev-card-caption">@ $850/MT polymer</span>
+          </div>
+        </div>
+
+        <!-- 4. Coastal Risk Exposure -->
+        <div class="rev-card rev-card-glow-rose">
+          <div class="rev-card-top">
+            <span class="rev-card-label">Coastal Risk Exposure</span>
+            <div class="rev-card-icon-badge">🚨</div>
+          </div>
+          <div class="rev-card-val" id="kpi-risk-val">78 <span class="rev-card-unit">(47%)</span></div>
+          <div class="rev-card-trend-row">
+            <span class="trend-pill alert" id="kpi-risk-trend">High & Critical</span>
+            <span class="rev-card-caption">Vulnerable nations</span>
+          </div>
+        </div>
+
+        <!-- 5. Per-Capita Index -->
+        <div class="rev-card rev-card-glow-amber">
+          <div class="rev-card-top">
+            <span class="rev-card-label">Per-Capita Index</span>
+            <div class="rev-card-icon-badge">👤</div>
+          </div>
+          <div class="rev-card-val" id="kpi-percap-val">122.3 <span class="rev-card-unit">kg/person</span></div>
+          <div class="rev-card-trend-row">
+            <span class="trend-pill neutral" id="kpi-percap-trend">165/165 Nations</span>
+            <span class="rev-card-caption">Unweighted mean</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Key Automated Insights (Smart Dribbble Cards) -->
+      <div class="dribbble-section-title">
+        <h3><span>💡</span> Autonomous Executive Takeaways</h3>
+        <span class="section-tag">Computed Signals</span>
+      </div>
+
+      <section class="insights-grid">
+        <div class="insight-pill-card">
+          <div class="insight-header">
+            <span class="insight-tag">Volume Anchor</span>
+            <span>📈</span>
+          </div>
+          <div class="insight-main" id="insight-vol-main">China • 59.08 MT</div>
+          <div class="insight-subtext" id="insight-vol-sub">Drives 20.8% of current filtered waste footprint.</div>
+        </div>
+
+        <div class="insight-pill-card emerald">
+          <div class="insight-header">
+            <span class="insight-tag">Efficiency Benchmark</span>
+            <span>🏆</span>
+          </div>
+          <div class="insight-main" id="insight-rec-main">Japan • 84.8% Recycled</div>
+          <div class="insight-subtext" id="insight-rec-sub">Global benchmark average is 13.1%.</div>
+        </div>
+
+        <div class="insight-pill-card amber">
+          <div class="insight-header">
+            <span class="insight-tag">Peak Generation Density</span>
+            <span>⚡</span>
+          </div>
+          <div class="insight-main" id="insight-percap-main">Singapore • 217.9 kg</div>
+          <div class="insight-subtext" id="insight-percap-sub">Global average is 122.3 kg/person.</div>
+        </div>
+
+        <div class="insight-pill-card cyan">
+          <div class="insight-header">
+            <span class="insight-tag">Dominant Stream</span>
+            <span>🏭</span>
+          </div>
+          <div class="insight-main" id="insight-stream-main">Consumer Packaging</div>
+          <div class="insight-subtext" id="insight-stream-sub">Primary stream across 58 nations (35.2%).</div>
+        </div>
+      </section>
+
+      <!-- 3. Segmented Navigation Tabs -->
+      <nav class="tabs-nav">
+        <button type="button" class="tab-btn active" data-tab="analytics">
+          <span>⚡</span> Revenue & Waste Analytics
+        </button>
+        <button type="button" class="tab-btn" data-tab="leaderboards">
+          <span>📊</span> Efficiency & Volume Leaderboards
+        </button>
+        <button type="button" class="tab-btn" data-tab="benchmark">
+          <span>⚔️</span> Benchmark Cohort Matrix
+        </button>
+        <button type="button" class="tab-btn" data-tab="dossier">
+          <span>🔍</span> Country Dossier
+        </button>
+        <button type="button" class="tab-btn" data-tab="ledger">
+          <span>📋</span> Ledger Explorer
+        </button>
+      </nav>
+
+      <!-- TAB 1: REVENUE & WASTE ANALYTICS -->
+      <div class="tab-pane active" id="tab-analytics">
+        <div class="dribbble-section-title">
+          <h3><span>📈</span> Macro Risk & Material Flow Analysis</h3>
+          <span class="section-tag">Interactive visual suite</span>
+        </div>
+
+        <div class="charts-grid-2">
+          <!-- Donut: Coastal Risk -->
+          <div class="chart-card">
+            <div class="chart-card-header">
+              <span class="chart-card-title">Coastal Waste Leakage Risk Breakdown</span>
+            </div>
+            <div id="chart-coastal-risk"></div>
+          </div>
+
+          <!-- Bar: Primary Sources -->
+          <div class="chart-card">
+            <div class="chart-card-header">
+              <span class="chart-card-title">Primary Waste Streams by Sector (Country Count)</span>
+            </div>
+            <div id="chart-main-sources"></div>
+          </div>
+        </div>
+
+        <!-- Scatter Plot -->
+        <div class="chart-card">
+          <div class="chart-card-header">
+            <span class="chart-card-title">Waste Volume vs Recycling Efficiency (Bubble Size = Per-Capita kg)</span>
+            <div class="chart-ctrl-group">
+              <label class="custom-checkbox" style="padding:0.25rem 0.5rem; font-size:0.75rem;">
+                <input type="checkbox" id="cb-scatter-log" />
+                <span>Log Scale (Waste MT)</span>
+              </label>
+            </div>
+          </div>
+          <div id="chart-scatter"></div>
+        </div>
+      </div>
+
+      <!-- TAB 2: LEADERBOARDS -->
+      <div class="tab-pane" id="tab-leaderboards">
+        <div class="dribbble-section-title">
+          <h3><span>🏆</span> Global Generation & Recovery Rankings</h3>
+          <span class="section-tag">Leaderboards</span>
+        </div>
+
+        <div class="charts-grid-equal">
+          <!-- Top Waste -->
+          <div class="chart-card">
+            <div class="chart-card-header">
+              <span class="chart-card-title">Top 10 Global Generators by Total Plastic Waste (MT)</span>
+            </div>
+            <div id="chart-top-waste"></div>
+          </div>
+
+          <!-- Top Per Capita -->
+          <div class="chart-card">
+            <div class="chart-card-header">
+              <span class="chart-card-title">Top 10 Per-Capita Waste Footprints (kg/person)</span>
+            </div>
+            <div id="chart-per-capita"></div>
+          </div>
+        </div>
+
+        <!-- Recycling Rates -->
+        <div class="chart-card">
+          <div class="chart-card-header">
+            <span class="chart-card-title">Recycling Performance & Circular Recovery Efficiency (%)</span>
+            <div class="chart-ctrl-group">
+              <select id="rec-sort-select" class="chart-select">
+                <option value="highest">Highest Recycling First</option>
+                <option value="lowest">Lowest Recycling First</option>
+              </select>
+              <select id="rec-scope-select" class="chart-select">
+                <option value="15">Top 15 Nations</option>
+                <option value="25">Top 25 Nations</option>
+                <option value="50">Top 50 Nations</option>
+                <option value="all">All Filtered Nations</option>
+              </select>
+            </div>
+          </div>
+          <div id="chart-recycling-rates"></div>
+        </div>
+      </div>
+
+      <!-- TAB 3: BENCHMARK COHORT MATRIX -->
+      <div class="tab-pane" id="tab-benchmark">
+        <div class="dribbble-section-title">
+          <h3><span>⚔️</span> Head-to-Head Country Benchmark Matrix</h3>
+          <span class="section-tag">Multi-metric comparative</span>
+        </div>
+
+        <div class="chart-card" style="margin-bottom:1.25rem;">
+          <div class="chart-card-header">
+            <div>
+              <span class="chart-card-title">Benchmark Cohort (2 to 8 Nations)</span>
+              <div style="font-size:0.75rem; color:var(--text-faint); margin-top:0.2rem;">Select nations to contrast across volume, recovery, and density.</div>
+            </div>
+            <select id="benchmark-select" class="chart-select" style="min-width:200px;">
+              <option value="">+ Add nation to cohort...</option>
+            </select>
+          </div>
+          <div class="filter-chips" id="benchmark-chips-wrap"></div>
+          <div id="chart-benchmark-cohort"></div>
+        </div>
+
+        <!-- Benchmark Variance Table -->
+        <div class="table-card">
+          <div style="font-size:0.9rem; font-weight:800; margin-bottom:0.75rem; color:var(--text-main);">
+            📌 Variance Against Global Baseline Averages
+          </div>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Country</th>
+                <th>Total Waste</th>
+                <th>vs Global Mean (1.72 MT)</th>
+                <th>Recycling Margin</th>
+                <th>vs Global Mean (13.1%)</th>
+                <th>Per-Capita</th>
+                <th>vs Global Mean (122.3 kg)</th>
+                <th>Valuation ($M)</th>
+                <th>Coastal Risk</th>
+                <th>Primary Sector</th>
+              </tr>
+            </thead>
+            <tbody id="benchmark-table-body"></tbody>
+          </table>
+          <button type="button" class="btn-download" id="btn-download-benchmark">
+            <span>📥</span> Download Benchmark Cohort Data (CSV)
+          </button>
+        </div>
+      </div>
+
+      <!-- TAB 4: COUNTRY DOSSIER -->
+      <div class="tab-pane" id="tab-dossier">
+        <div class="dribbble-section-title">
+          <h3><span>🔍</span> Deep-Dive Country Dossier & Valuation</h3>
+          <span class="section-tag">Entity level profiling</span>
+        </div>
+
+        <div style="margin-bottom: 1rem; max-width: 380px;">
+          <label class="filter-label" for="dossier-select">Choose Entity to Inspect</label>
+          <select id="dossier-select" class="form-input"></select>
+        </div>
+
+        <div class="profile-hero">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem;">
+            <div>
+              <div style="font-size:1.6rem; font-weight:800; color:var(--text-main); letter-spacing:-0.03em;">
+                📍 <span id="dossier-country-name">United States</span>
+              </div>
+              <div style="font-size:0.75rem; color:var(--text-muted); margin-top:0.15rem;">
+                National Material Flow & Circular Economy Intelligence
+              </div>
+            </div>
+            <div style="display:flex; gap:0.5rem; align-items:center;">
+              <span class="profile-badge-pill Medium" id="dossier-risk-badge">Medium Coastal Risk</span>
+              <span class="pill-chip" id="dossier-stream-pill">Sector: Packaging Consumer</span>
+            </div>
+          </div>
+
+          <div class="dossier-metrics-grid">
+            <div class="dossier-box">
+              <div class="dossier-label">Total Waste Volume</div>
+              <div class="dossier-val" id="dossier-waste-val">42.02 MT</div>
+              <div class="dossier-variance" id="dossier-waste-var">+2,338.0% vs global mean (1.72 MT)</div>
+            </div>
+
+            <div class="dossier-box">
+              <div class="dossier-label">Recycling Efficiency</div>
+              <div class="dossier-val" id="dossier-rec-val" style="color:var(--emerald);">32.1%</div>
+              <div class="dossier-variance" id="dossier-rec-var">+19.0 pts vs global mean (13.1%)</div>
+            </div>
+
+            <div class="dossier-box">
+              <div class="dossier-label">Per-Capita Intensity</div>
+              <div class="dossier-val" id="dossier-percap-val" style="color:var(--amber);">127.5 kg</div>
+              <div class="dossier-variance" id="dossier-percap-var">+4.3% vs global mean (122.3 kg)</div>
+            </div>
+
+            <div class="dossier-box">
+              <div class="dossier-label">Circular Asset Value</div>
+              <div class="dossier-val" id="dossier-val-val" style="color:var(--cyan);">$11,465.05 M</div>
+              <div style="font-size:0.72rem; color:var(--text-muted); margin-top:0.3rem;">Recovered polymer market opportunity</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 5: LEDGER EXPLORER -->
+      <div class="tab-pane" id="tab-ledger">
+        <div class="dribbble-section-title">
+          <h3><span>📋</span> Global Financial & Material Waste Ledger</h3>
+          <span class="section-tag">Authentic raw records</span>
+        </div>
+
+        <div class="table-card">
+          <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.75rem; margin-bottom:1rem;">
+            <div style="flex:1; min-width:240px;">
+              <input type="text" id="ledger-search" class="form-input" placeholder="Type country name to search ledger..." />
+            </div>
+            <div style="display:flex; gap:0.5rem; align-items:center;">
+              <select id="ledger-sort-col" class="chart-select">
+                <option value="Total_Plastic_Waste_MT">Total Waste (MT)</option>
+                <option value="Recycling_Rate">Recycling Rate (%)</option>
+                <option value="Per_Capita_Waste_KG">Per-Capita (kg)</option>
+                <option value="Material_Valuation_USD_M">Circular Valuation ($M)</option>
+                <option value="Country">Country Name</option>
+                <option value="Coastal_Waste_Risk">Coastal Leakage Risk</option>
+              </select>
+              <select id="ledger-sort-order" class="chart-select">
+                <option value="desc">Descending</option>
+                <option value="asc">Ascending</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="max-height: 480px; overflow-y: auto;">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Country</th>
+                  <th>Total Waste (MT)</th>
+                  <th>Primary Sector</th>
+                  <th>Recycling Margin</th>
+                  <th>Per-Capita (kg)</th>
+                  <th>Coastal Risk</th>
+                  <th>Circular Valuation</th>
+                </tr>
+              </thead>
+              <tbody id="ledger-table-body"></tbody>
+            </table>
+          </div>
+
+          <button type="button" class="btn-download" id="btn-download-ledger">
+            <span>📥</span> Download Filtered Ledger (CSV)
+          </button>
+        </div>
+      </div>
+
+      <!-- Application Footer -->
+      <footer class="revenue-footer">
+        <span class="revenue-footer-brand">Revenue.OS // Eco-Analytics Engine</span> &nbsp;•&nbsp; Inspired by Dribbble Revenue & SaaS Design Systems
+        <br />
+        <span style="font-size:0.72rem; color:var(--text-faint); margin-top:0.3rem; display:inline-block;">
+          Built with HTML5, Vanilla CSS, JavaScript & Plotly.js. Strictly derived from authentic country records.
+        </span>
+      </footer>
+
+    </main>
   </div>
 
-  <div id="root"></div>
+  <!-- Mobile Floating Nav Toggle -->
+  <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle filters sidebar">
+    <span>☰</span>
+  </button>
 
-  <!-- Stlite Module Bootstrap -->
-  <script type="module">
-    import { mount } from "https://cdn.jsdelivr.net/npm/@stlite/browser@1.12.0/build/stlite.js";
+  <!-- Authentic Dataset & Dashboard Application Logic -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
 
-    try {
-      mount(
-        {
-          entrypoint: "app.py",
-          files: {
-            "app.py": {
-              url: "./app.py",
-            },
-            "Plastic Waste Around the World.csv": {
-              url: "./Plastic%20Waste%20Around%20the%20World.csv",
-            },
-          },
-          requirements: ["pandas", "plotly"],
-          streamlitConfig: {
-            "theme.base": "dark",
-            "theme.primaryColor": "#6366F1",
-            "theme.backgroundColor": "#0B1020",
-            "theme.secondaryBackgroundColor": "#111827",
-            "theme.textColor": "#FFFFFF"
-          }
-        },
-        document.getElementById("root")
-      );
-
-      // Hide loading spinner once the Streamlit container is populated
-      const observer = new MutationObserver((mutations, obs) => {
-        const appElem = document.querySelector(".stApp") || document.querySelector(".stlite-app-container");
-        if (appElem && appElem.children.length > 0) {
-          const loader = document.getElementById("loading-indicator");
-          if (loader) {
-            loader.style.opacity = "0";
-            loader.style.visibility = "hidden";
-            setTimeout(() => loader.remove(), 400);
-          }
-          obs.disconnect();
-        }
-      });
-      observer.observe(document.getElementById("root"), { childList: true, subtree: true });
-    } catch (err) {
-      console.error("Failed to mount stlite:", err);
-      const sub = document.querySelector(".loading-subtitle");
-      if (sub) {
-        sub.textContent = "Error initializing dashboard: " + err.message;
-        sub.style.color = "#F43F5E";
-      }
-    }
-  </script>
 </body>
 </html>

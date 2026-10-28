@@ -1,0 +1,1652 @@
+[
+  {
+    "Country": "China",
+    "Total_Plastic_Waste_MT": 59.08,
+    "Main_Sources": "Packaging_Industrial",
+    "Recycling_Rate": 29.8,
+    "Per_Capita_Waste_KG": 41.2,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 17.605839999999997,
+    "Material_Valuation_USD_M": 14964.963999999998
+  },
+  {
+    "Country": "United States",
+    "Total_Plastic_Waste_MT": 42.02,
+    "Main_Sources": "Packaging_Consumer",
+    "Recycling_Rate": 32.1,
+    "Per_Capita_Waste_KG": 127.5,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 13.488420000000001,
+    "Material_Valuation_USD_M": 11465.157000000001
+  },
+  {
+    "Country": "India",
+    "Total_Plastic_Waste_MT": 26.33,
+    "Main_Sources": "Consumer_Goods",
+    "Recycling_Rate": 11.5,
+    "Per_Capita_Waste_KG": 19.3,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 3.02795,
+    "Material_Valuation_USD_M": 2573.7575
+  },
+  {
+    "Country": "Japan",
+    "Total_Plastic_Waste_MT": 7.99,
+    "Main_Sources": "Packaging_Electronics",
+    "Recycling_Rate": 84.8,
+    "Per_Capita_Waste_KG": 63.2,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 6.77552,
+    "Material_Valuation_USD_M": 5759.192
+  },
+  {
+    "Country": "Germany",
+    "Total_Plastic_Waste_MT": 6.28,
+    "Main_Sources": "Automotive_Packaging",
+    "Recycling_Rate": 56.1,
+    "Per_Capita_Waste_KG": 75.6,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 3.5230800000000007,
+    "Material_Valuation_USD_M": 2994.6180000000004
+  },
+  {
+    "Country": "Brazil",
+    "Total_Plastic_Waste_MT": 5.96,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 1.2,
+    "Per_Capita_Waste_KG": 28.1,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.07152,
+    "Material_Valuation_USD_M": 60.792
+  },
+  {
+    "Country": "Indonesia",
+    "Total_Plastic_Waste_MT": 5.85,
+    "Main_Sources": "Food_Packaging",
+    "Recycling_Rate": 11.8,
+    "Per_Capita_Waste_KG": 21.3,
+    "Coastal_Waste_Risk": "Very_High",
+    "Recycled_Waste_MT": 0.6903,
+    "Material_Valuation_USD_M": 586.755
+  },
+  {
+    "Country": "Russia",
+    "Total_Plastic_Waste_MT": 5.84,
+    "Main_Sources": "Industrial_Consumer",
+    "Recycling_Rate": 5.6,
+    "Per_Capita_Waste_KG": 40.2,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.32703999999999994,
+    "Material_Valuation_USD_M": 277.9839999999999
+  },
+  {
+    "Country": "United Kingdom",
+    "Total_Plastic_Waste_MT": 5.03,
+    "Main_Sources": "Packaging_Consumer",
+    "Recycling_Rate": 46.2,
+    "Per_Capita_Waste_KG": 74.3,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 2.3238600000000003,
+    "Material_Valuation_USD_M": 1975.2810000000002
+  },
+  {
+    "Country": "France",
+    "Total_Plastic_Waste_MT": 4.98,
+    "Main_Sources": "Packaging_Consumer",
+    "Recycling_Rate": 27.3,
+    "Per_Capita_Waste_KG": 73.1,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 1.3595400000000002,
+    "Material_Valuation_USD_M": 1155.6090000000002
+  },
+  {
+    "Country": "Mexico",
+    "Total_Plastic_Waste_MT": 4.43,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 6.7,
+    "Per_Capita_Waste_KG": 34.2,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.29681,
+    "Material_Valuation_USD_M": 252.28850000000003
+  },
+  {
+    "Country": "Canada",
+    "Total_Plastic_Waste_MT": 3.89,
+    "Main_Sources": "Packaging_Consumer",
+    "Recycling_Rate": 9.4,
+    "Per_Capita_Waste_KG": 102.1,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.36566,
+    "Material_Valuation_USD_M": 310.811
+  },
+  {
+    "Country": "Italy",
+    "Total_Plastic_Waste_MT": 3.83,
+    "Main_Sources": "Packaging_Industrial",
+    "Recycling_Rate": 41.2,
+    "Per_Capita_Waste_KG": 63.4,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 1.5779600000000003,
+    "Material_Valuation_USD_M": 1341.2660000000003
+  },
+  {
+    "Country": "Turkey",
+    "Total_Plastic_Waste_MT": 3.21,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 12.1,
+    "Per_Capita_Waste_KG": 38.5,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.38841,
+    "Material_Valuation_USD_M": 330.14849999999996
+  },
+  {
+    "Country": "South Korea",
+    "Total_Plastic_Waste_MT": 2.91,
+    "Main_Sources": "Electronics_Packaging",
+    "Recycling_Rate": 59.1,
+    "Per_Capita_Waste_KG": 56.7,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 1.71981,
+    "Material_Valuation_USD_M": 1461.8385
+  },
+  {
+    "Country": "Spain",
+    "Total_Plastic_Waste_MT": 2.58,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 37.8,
+    "Per_Capita_Waste_KG": 54.9,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.9752399999999999,
+    "Material_Valuation_USD_M": 828.954
+  },
+  {
+    "Country": "Vietnam",
+    "Total_Plastic_Waste_MT": 2.54,
+    "Main_Sources": "Food_Packaging",
+    "Recycling_Rate": 15.3,
+    "Per_Capita_Waste_KG": 25.8,
+    "Coastal_Waste_Risk": "Very_High",
+    "Recycled_Waste_MT": 0.38862,
+    "Material_Valuation_USD_M": 330.327
+  },
+  {
+    "Country": "Thailand",
+    "Total_Plastic_Waste_MT": 2.41,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 17.6,
+    "Per_Capita_Waste_KG": 34.5,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.4241600000000001,
+    "Material_Valuation_USD_M": 360.53600000000006
+  },
+  {
+    "Country": "Malaysia",
+    "Total_Plastic_Waste_MT": 2.31,
+    "Main_Sources": "Industrial_Consumer",
+    "Recycling_Rate": 24.3,
+    "Per_Capita_Waste_KG": 70.2,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.56133,
+    "Material_Valuation_USD_M": 477.1305
+  },
+  {
+    "Country": "Poland",
+    "Total_Plastic_Waste_MT": 2.21,
+    "Main_Sources": "Packaging_Industrial",
+    "Recycling_Rate": 34.5,
+    "Per_Capita_Waste_KG": 58.3,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.76245,
+    "Material_Valuation_USD_M": 648.0825
+  },
+  {
+    "Country": "Egypt",
+    "Total_Plastic_Waste_MT": 2.01,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 6.5,
+    "Per_Capita_Waste_KG": 19.3,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.13065,
+    "Material_Valuation_USD_M": 111.0525
+  },
+  {
+    "Country": "Argentina",
+    "Total_Plastic_Waste_MT": 1.98,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 14.2,
+    "Per_Capita_Waste_KG": 43.5,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.28115999999999997,
+    "Material_Valuation_USD_M": 238.98599999999996
+  },
+  {
+    "Country": "Netherlands",
+    "Total_Plastic_Waste_MT": 1.78,
+    "Main_Sources": "Industrial_Packaging",
+    "Recycling_Rate": 55.9,
+    "Per_Capita_Waste_KG": 102.8,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.9950199999999999,
+    "Material_Valuation_USD_M": 845.7669999999999
+  },
+  {
+    "Country": "Australia",
+    "Total_Plastic_Waste_MT": 1.67,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 13.2,
+    "Per_Capita_Waste_KG": 64.8,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.22044,
+    "Material_Valuation_USD_M": 187.374
+  },
+  {
+    "Country": "Saudi Arabia",
+    "Total_Plastic_Waste_MT": 1.65,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 4.5,
+    "Per_Capita_Waste_KG": 46.9,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.07425,
+    "Material_Valuation_USD_M": 63.1125
+  },
+  {
+    "Country": "Philippines",
+    "Total_Plastic_Waste_MT": 1.63,
+    "Main_Sources": "Food_Packaging",
+    "Recycling_Rate": 9.1,
+    "Per_Capita_Waste_KG": 14.8,
+    "Coastal_Waste_Risk": "Very_High",
+    "Recycled_Waste_MT": 0.14833,
+    "Material_Valuation_USD_M": 126.08049999999999
+  },
+  {
+    "Country": "Bangladesh",
+    "Total_Plastic_Waste_MT": 1.61,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 8.4,
+    "Per_Capita_Waste_KG": 9.7,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.13524000000000003,
+    "Material_Valuation_USD_M": 114.95400000000002
+  },
+  {
+    "Country": "Pakistan",
+    "Total_Plastic_Waste_MT": 1.59,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 3.2,
+    "Per_Capita_Waste_KG": 7.1,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.05088,
+    "Material_Valuation_USD_M": 43.248000000000005
+  },
+  {
+    "Country": "South Africa",
+    "Total_Plastic_Waste_MT": 1.58,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 18.9,
+    "Per_Capita_Waste_KG": 26.4,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.29862,
+    "Material_Valuation_USD_M": 253.827
+  },
+  {
+    "Country": "Colombia",
+    "Total_Plastic_Waste_MT": 1.54,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 7.8,
+    "Per_Capita_Waste_KG": 30.1,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.12012,
+    "Material_Valuation_USD_M": 102.102
+  },
+  {
+    "Country": "Nigeria",
+    "Total_Plastic_Waste_MT": 1.53,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 2.1,
+    "Per_Capita_Waste_KG": 7.3,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.032130000000000006,
+    "Material_Valuation_USD_M": 27.310500000000005
+  },
+  {
+    "Country": "Belgium",
+    "Total_Plastic_Waste_MT": 1.52,
+    "Main_Sources": "Industrial_Packaging",
+    "Recycling_Rate": 43.2,
+    "Per_Capita_Waste_KG": 131.2,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.6566400000000001,
+    "Material_Valuation_USD_M": 558.1440000000001
+  },
+  {
+    "Country": "Sweden",
+    "Total_Plastic_Waste_MT": 1.51,
+    "Main_Sources": "Packaging_Industrial",
+    "Recycling_Rate": 50.6,
+    "Per_Capita_Waste_KG": 146.3,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.76406,
+    "Material_Valuation_USD_M": 649.451
+  },
+  {
+    "Country": "Austria",
+    "Total_Plastic_Waste_MT": 1.48,
+    "Main_Sources": "Industrial_Packaging",
+    "Recycling_Rate": 56.4,
+    "Per_Capita_Waste_KG": 164.8,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.8347199999999999,
+    "Material_Valuation_USD_M": 709.512
+  },
+  {
+    "Country": "Ukraine",
+    "Total_Plastic_Waste_MT": 1.47,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 3.4,
+    "Per_Capita_Waste_KG": 33.7,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.049980000000000004,
+    "Material_Valuation_USD_M": 42.483000000000004
+  },
+  {
+    "Country": "Greece",
+    "Total_Plastic_Waste_MT": 1.45,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 21.3,
+    "Per_Capita_Waste_KG": 139.2,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.30884999999999996,
+    "Material_Valuation_USD_M": 262.5225
+  },
+  {
+    "Country": "Czech Republic",
+    "Total_Plastic_Waste_MT": 1.43,
+    "Main_Sources": "Industrial_Packaging",
+    "Recycling_Rate": 41.7,
+    "Per_Capita_Waste_KG": 133.9,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.59631,
+    "Material_Valuation_USD_M": 506.8635
+  },
+  {
+    "Country": "Romania",
+    "Total_Plastic_Waste_MT": 1.41,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 13.8,
+    "Per_Capita_Waste_KG": 73.4,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.19458,
+    "Material_Valuation_USD_M": 165.393
+  },
+  {
+    "Country": "Portugal",
+    "Total_Plastic_Waste_MT": 1.39,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 31.2,
+    "Per_Capita_Waste_KG": 135.8,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.43367999999999995,
+    "Material_Valuation_USD_M": 368.628
+  },
+  {
+    "Country": "Hungary",
+    "Total_Plastic_Waste_MT": 1.37,
+    "Main_Sources": "Industrial_Packaging",
+    "Recycling_Rate": 30.1,
+    "Per_Capita_Waste_KG": 141.5,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.41237,
+    "Material_Valuation_USD_M": 350.5145
+  },
+  {
+    "Country": "Denmark",
+    "Total_Plastic_Waste_MT": 1.35,
+    "Main_Sources": "Packaging_Consumer",
+    "Recycling_Rate": 42.3,
+    "Per_Capita_Waste_KG": 232.1,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.5710500000000001,
+    "Material_Valuation_USD_M": 485.39250000000004
+  },
+  {
+    "Country": "Finland",
+    "Total_Plastic_Waste_MT": 1.33,
+    "Main_Sources": "Industrial_Packaging",
+    "Recycling_Rate": 42.1,
+    "Per_Capita_Waste_KG": 240.2,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.55993,
+    "Material_Valuation_USD_M": 475.94050000000004
+  },
+  {
+    "Country": "Norway",
+    "Total_Plastic_Waste_MT": 1.31,
+    "Main_Sources": "Industrial_Packaging",
+    "Recycling_Rate": 44.5,
+    "Per_Capita_Waste_KG": 243.1,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.5829500000000001,
+    "Material_Valuation_USD_M": 495.50750000000005
+  },
+  {
+    "Country": "Ireland",
+    "Total_Plastic_Waste_MT": 1.29,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 31.2,
+    "Per_Capita_Waste_KG": 257.3,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.40248,
+    "Material_Valuation_USD_M": 342.108
+  },
+  {
+    "Country": "Singapore",
+    "Total_Plastic_Waste_MT": 1.27,
+    "Main_Sources": "Industrial_Packaging",
+    "Recycling_Rate": 59.8,
+    "Per_Capita_Waste_KG": 217.9,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.75946,
+    "Material_Valuation_USD_M": 645.541
+  },
+  {
+    "Country": "Chile",
+    "Total_Plastic_Waste_MT": 1.25,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 8.9,
+    "Per_Capita_Waste_KG": 64.7,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.11125000000000002,
+    "Material_Valuation_USD_M": 94.56250000000001
+  },
+  {
+    "Country": "Israel",
+    "Total_Plastic_Waste_MT": 1.23,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 14.5,
+    "Per_Capita_Waste_KG": 133.7,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.17834999999999998,
+    "Material_Valuation_USD_M": 151.5975
+  },
+  {
+    "Country": "Peru",
+    "Total_Plastic_Waste_MT": 1.21,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 2.3,
+    "Per_Capita_Waste_KG": 36.4,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.027829999999999997,
+    "Material_Valuation_USD_M": 23.655499999999996
+  },
+  {
+    "Country": "Kazakhstan",
+    "Total_Plastic_Waste_MT": 1.19,
+    "Main_Sources": "Industrial_Consumer",
+    "Recycling_Rate": 4.5,
+    "Per_Capita_Waste_KG": 62.8,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.05354999999999999,
+    "Material_Valuation_USD_M": 45.51749999999999
+  },
+  {
+    "Country": "Morocco",
+    "Total_Plastic_Waste_MT": 1.17,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 7.8,
+    "Per_Capita_Waste_KG": 31.2,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.09126,
+    "Material_Valuation_USD_M": 77.571
+  },
+  {
+    "Country": "Algeria",
+    "Total_Plastic_Waste_MT": 1.15,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 4.3,
+    "Per_Capita_Waste_KG": 25.9,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.049449999999999994,
+    "Material_Valuation_USD_M": 42.03249999999999
+  },
+  {
+    "Country": "Slovakia",
+    "Total_Plastic_Waste_MT": 1.13,
+    "Main_Sources": "Industrial_Packaging",
+    "Recycling_Rate": 38.9,
+    "Per_Capita_Waste_KG": 207.1,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.43956999999999996,
+    "Material_Valuation_USD_M": 373.63449999999995
+  },
+  {
+    "Country": "Ecuador",
+    "Total_Plastic_Waste_MT": 1.11,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 4.1,
+    "Per_Capita_Waste_KG": 61.8,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.045509999999999995,
+    "Material_Valuation_USD_M": 38.683499999999995
+  },
+  {
+    "Country": "Belarus",
+    "Total_Plastic_Waste_MT": 1.09,
+    "Main_Sources": "Industrial_Consumer",
+    "Recycling_Rate": 7.2,
+    "Per_Capita_Waste_KG": 115.7,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.07848000000000001,
+    "Material_Valuation_USD_M": 66.70800000000001
+  },
+  {
+    "Country": "Dominican Republic",
+    "Total_Plastic_Waste_MT": 1.07,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 2.8,
+    "Per_Capita_Waste_KG": 97.6,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.029959999999999997,
+    "Material_Valuation_USD_M": 25.465999999999998
+  },
+  {
+    "Country": "Bulgaria",
+    "Total_Plastic_Waste_MT": 1.05,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 31.5,
+    "Per_Capita_Waste_KG": 152.3,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.33075000000000004,
+    "Material_Valuation_USD_M": 281.13750000000005
+  },
+  {
+    "Country": "Tunisia",
+    "Total_Plastic_Waste_MT": 1.03,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 4.1,
+    "Per_Capita_Waste_KG": 85.9,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.04223,
+    "Material_Valuation_USD_M": 35.8955
+  },
+  {
+    "Country": "Sri Lanka",
+    "Total_Plastic_Waste_MT": 1.01,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 29.8,
+    "Per_Capita_Waste_KG": 46.7,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.30097999999999997,
+    "Material_Valuation_USD_M": 255.83299999999997
+  },
+  {
+    "Country": "Azerbaijan",
+    "Total_Plastic_Waste_MT": 0.99,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 18.2,
+    "Per_Capita_Waste_KG": 96.8,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.18018,
+    "Material_Valuation_USD_M": 153.15300000000002
+  },
+  {
+    "Country": "Croatia",
+    "Total_Plastic_Waste_MT": 0.97,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 33.7,
+    "Per_Capita_Waste_KG": 238.1,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.32689,
+    "Material_Valuation_USD_M": 277.85650000000004
+  },
+  {
+    "Country": "Uruguay",
+    "Total_Plastic_Waste_MT": 0.95,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 35.2,
+    "Per_Capita_Waste_KG": 272.4,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.33440000000000003,
+    "Material_Valuation_USD_M": 284.24
+  },
+  {
+    "Country": "Lithuania",
+    "Total_Plastic_Waste_MT": 0.93,
+    "Main_Sources": "Industrial_Packaging",
+    "Recycling_Rate": 45.3,
+    "Per_Capita_Waste_KG": 334.8,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.42129,
+    "Material_Valuation_USD_M": 358.0965
+  },
+  {
+    "Country": "Slovenia",
+    "Total_Plastic_Waste_MT": 0.91,
+    "Main_Sources": "Industrial_Packaging",
+    "Recycling_Rate": 42.1,
+    "Per_Capita_Waste_KG": 436.5,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.38311000000000006,
+    "Material_Valuation_USD_M": 325.6435000000001
+  },
+  {
+    "Country": "Costa Rica",
+    "Total_Plastic_Waste_MT": 0.89,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 13.2,
+    "Per_Capita_Waste_KG": 172.8,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.11748,
+    "Material_Valuation_USD_M": 99.858
+  },
+  {
+    "Country": "Panama",
+    "Total_Plastic_Waste_MT": 0.87,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 5.4,
+    "Per_Capita_Waste_KG": 198.6,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.04698000000000001,
+    "Material_Valuation_USD_M": 39.93300000000001
+  },
+  {
+    "Country": "Kuwait",
+    "Total_Plastic_Waste_MT": 0.85,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 10.2,
+    "Per_Capita_Waste_KG": 195.4,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.08669999999999999,
+    "Material_Valuation_USD_M": 73.695
+  },
+  {
+    "Country": "Jordan",
+    "Total_Plastic_Waste_MT": 0.83,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 7.8,
+    "Per_Capita_Waste_KG": 80.6,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.06473999999999999,
+    "Material_Valuation_USD_M": 55.028999999999996
+  },
+  {
+    "Country": "Lebanon",
+    "Total_Plastic_Waste_MT": 0.81,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 6.4,
+    "Per_Capita_Waste_KG": 119.1,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.051840000000000004,
+    "Material_Valuation_USD_M": 44.064
+  },
+  {
+    "Country": "Oman",
+    "Total_Plastic_Waste_MT": 0.79,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 3.2,
+    "Per_Capita_Waste_KG": 151.9,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.02528,
+    "Material_Valuation_USD_M": 21.488
+  },
+  {
+    "Country": "Bolivia",
+    "Total_Plastic_Waste_MT": 0.77,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 2.8,
+    "Per_Capita_Waste_KG": 65.3,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.02156,
+    "Material_Valuation_USD_M": 18.326
+  },
+  {
+    "Country": "Paraguay",
+    "Total_Plastic_Waste_MT": 0.75,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 4.1,
+    "Per_Capita_Waste_KG": 104.2,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.030749999999999996,
+    "Material_Valuation_USD_M": 26.137499999999996
+  },
+  {
+    "Country": "Latvia",
+    "Total_Plastic_Waste_MT": 0.73,
+    "Main_Sources": "Industrial_Packaging",
+    "Recycling_Rate": 43.2,
+    "Per_Capita_Waste_KG": 386.8,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.31536000000000003,
+    "Material_Valuation_USD_M": 268.05600000000004
+  },
+  {
+    "Country": "Estonia",
+    "Total_Plastic_Waste_MT": 0.71,
+    "Main_Sources": "Industrial_Packaging",
+    "Recycling_Rate": 31.8,
+    "Per_Capita_Waste_KG": 534.6,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.22577999999999998,
+    "Material_Valuation_USD_M": 191.91299999999998
+  },
+  {
+    "Country": "Bahrain",
+    "Total_Plastic_Waste_MT": 0.69,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 4.5,
+    "Per_Capita_Waste_KG": 397.7,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.031049999999999998,
+    "Material_Valuation_USD_M": 26.3925
+  },
+  {
+    "Country": "Trinidad and Tobago",
+    "Total_Plastic_Waste_MT": 0.67,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 3.2,
+    "Per_Capita_Waste_KG": 478.6,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.02144,
+    "Material_Valuation_USD_M": 18.224
+  },
+  {
+    "Country": "Cyprus",
+    "Total_Plastic_Waste_MT": 0.65,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 16.4,
+    "Per_Capita_Waste_KG": 531.1,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.10659999999999999,
+    "Material_Valuation_USD_M": 90.60999999999999
+  },
+  {
+    "Country": "Montenegro",
+    "Total_Plastic_Waste_MT": 0.63,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 3.4,
+    "Per_Capita_Waste_KG": 1004.8,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.02142,
+    "Material_Valuation_USD_M": 18.207
+  },
+  {
+    "Country": "Luxembourg",
+    "Total_Plastic_Waste_MT": 0.61,
+    "Main_Sources": "Industrial_Packaging",
+    "Recycling_Rate": 48.9,
+    "Per_Capita_Waste_KG": 957.8,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.29829,
+    "Material_Valuation_USD_M": 253.5465
+  },
+  {
+    "Country": "Malta",
+    "Total_Plastic_Waste_MT": 0.59,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 11.2,
+    "Per_Capita_Waste_KG": 1331.5,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.06607999999999999,
+    "Material_Valuation_USD_M": 56.167999999999985
+  },
+  {
+    "Country": "Iceland",
+    "Total_Plastic_Waste_MT": 0.57,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 55.6,
+    "Per_Capita_Waste_KG": 1564.4,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.31692,
+    "Material_Valuation_USD_M": 269.382
+  },
+  {
+    "Country": "Qatar",
+    "Total_Plastic_Waste_MT": 0.55,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 8.9,
+    "Per_Capita_Waste_KG": 188.7,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.04895000000000001,
+    "Material_Valuation_USD_M": 41.60750000000001
+  },
+  {
+    "Country": "Cambodia",
+    "Total_Plastic_Waste_MT": 0.53,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 5.4,
+    "Per_Capita_Waste_KG": 31.2,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.028620000000000003,
+    "Material_Valuation_USD_M": 24.327
+  },
+  {
+    "Country": "Myanmar",
+    "Total_Plastic_Waste_MT": 0.51,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 2.1,
+    "Per_Capita_Waste_KG": 9.3,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.01071,
+    "Material_Valuation_USD_M": 9.1035
+  },
+  {
+    "Country": "Laos",
+    "Total_Plastic_Waste_MT": 0.49,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 1.8,
+    "Per_Capita_Waste_KG": 66.2,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.008820000000000001,
+    "Material_Valuation_USD_M": 7.497000000000002
+  },
+  {
+    "Country": "Mongolia",
+    "Total_Plastic_Waste_MT": 0.47,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.9,
+    "Per_Capita_Waste_KG": 141.6,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.00423,
+    "Material_Valuation_USD_M": 3.5955000000000004
+  },
+  {
+    "Country": "Afghanistan",
+    "Total_Plastic_Waste_MT": 0.45,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.5,
+    "Per_Capita_Waste_KG": 11.4,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.0022500000000000003,
+    "Material_Valuation_USD_M": 1.9125000000000003
+  },
+  {
+    "Country": "Yemen",
+    "Total_Plastic_Waste_MT": 0.43,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.3,
+    "Per_Capita_Waste_KG": 14.2,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00129,
+    "Material_Valuation_USD_M": 1.0965
+  },
+  {
+    "Country": "Syria",
+    "Total_Plastic_Waste_MT": 0.41,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.4,
+    "Per_Capita_Waste_KG": 24.7,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.00164,
+    "Material_Valuation_USD_M": 1.394
+  },
+  {
+    "Country": "Iraq",
+    "Total_Plastic_Waste_MT": 0.39,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 1.2,
+    "Per_Capita_Waste_KG": 9.6,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.00468,
+    "Material_Valuation_USD_M": 3.978
+  },
+  {
+    "Country": "Libya",
+    "Total_Plastic_Waste_MT": 0.37,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.8,
+    "Per_Capita_Waste_KG": 53.2,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00296,
+    "Material_Valuation_USD_M": 2.516
+  },
+  {
+    "Country": "Sudan",
+    "Total_Plastic_Waste_MT": 0.35,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.4,
+    "Per_Capita_Waste_KG": 7.9,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.0014,
+    "Material_Valuation_USD_M": 1.19
+  },
+  {
+    "Country": "Somalia",
+    "Total_Plastic_Waste_MT": 0.33,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.1,
+    "Per_Capita_Waste_KG": 20.4,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00033,
+    "Material_Valuation_USD_M": 0.28049999999999997
+  },
+  {
+    "Country": "Ethiopia",
+    "Total_Plastic_Waste_MT": 0.31,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.7,
+    "Per_Capita_Waste_KG": 2.6,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.0021699999999999996,
+    "Material_Valuation_USD_M": 1.8444999999999996
+  },
+  {
+    "Country": "Kenya",
+    "Total_Plastic_Waste_MT": 0.29,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 7.8,
+    "Per_Capita_Waste_KG": 5.3,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.022619999999999998,
+    "Material_Valuation_USD_M": 19.226999999999997
+  },
+  {
+    "Country": "Tanzania",
+    "Total_Plastic_Waste_MT": 0.27,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 5.4,
+    "Per_Capita_Waste_KG": 4.4,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.014580000000000003,
+    "Material_Valuation_USD_M": 12.393000000000002
+  },
+  {
+    "Country": "Uganda",
+    "Total_Plastic_Waste_MT": 0.25,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 2.3,
+    "Per_Capita_Waste_KG": 5.3,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.00575,
+    "Material_Valuation_USD_M": 4.8875
+  },
+  {
+    "Country": "Rwanda",
+    "Total_Plastic_Waste_MT": 0.23,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 11.2,
+    "Per_Capita_Waste_KG": 17.4,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.025759999999999998,
+    "Material_Valuation_USD_M": 21.895999999999997
+  },
+  {
+    "Country": "Burundi",
+    "Total_Plastic_Waste_MT": 0.21,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.8,
+    "Per_Capita_Waste_KG": 17.3,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.00168,
+    "Material_Valuation_USD_M": 1.4280000000000002
+  },
+  {
+    "Country": "Malawi",
+    "Total_Plastic_Waste_MT": 0.19,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.5,
+    "Per_Capita_Waste_KG": 9.7,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.00095,
+    "Material_Valuation_USD_M": 0.8075
+  },
+  {
+    "Country": "Mozambique",
+    "Total_Plastic_Waste_MT": 0.17,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.9,
+    "Per_Capita_Waste_KG": 5.3,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.0015300000000000003,
+    "Material_Valuation_USD_M": 1.3005000000000002
+  },
+  {
+    "Country": "Zimbabwe",
+    "Total_Plastic_Waste_MT": 0.15,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 2.1,
+    "Per_Capita_Waste_KG": 9.9,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.00315,
+    "Material_Valuation_USD_M": 2.6775
+  },
+  {
+    "Country": "Zambia",
+    "Total_Plastic_Waste_MT": 0.13,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 1.8,
+    "Per_Capita_Waste_KG": 6.9,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.0023400000000000005,
+    "Material_Valuation_USD_M": 1.9890000000000003
+  },
+  {
+    "Country": "Angola",
+    "Total_Plastic_Waste_MT": 0.11,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.4,
+    "Per_Capita_Waste_KG": 3.3,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00044,
+    "Material_Valuation_USD_M": 0.374
+  },
+  {
+    "Country": "Namibia",
+    "Total_Plastic_Waste_MT": 0.09,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 12.3,
+    "Per_Capita_Waste_KG": 35.1,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.01107,
+    "Material_Valuation_USD_M": 9.4095
+  },
+  {
+    "Country": "Botswana",
+    "Total_Plastic_Waste_MT": 0.07,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 8.9,
+    "Per_Capita_Waste_KG": 29.3,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.006230000000000001,
+    "Material_Valuation_USD_M": 5.295500000000001
+  },
+  {
+    "Country": "Lesotho",
+    "Total_Plastic_Waste_MT": 0.05,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.7,
+    "Per_Capita_Waste_KG": 23.2,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.00035,
+    "Material_Valuation_USD_M": 0.2975
+  },
+  {
+    "Country": "Eswatini",
+    "Total_Plastic_Waste_MT": 0.03,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 1.2,
+    "Per_Capita_Waste_KG": 25.6,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.00035999999999999997,
+    "Material_Valuation_USD_M": 0.306
+  },
+  {
+    "Country": "Madagascar",
+    "Total_Plastic_Waste_MT": 0.21,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 2.1,
+    "Per_Capita_Waste_KG": 7.4,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00441,
+    "Material_Valuation_USD_M": 3.7485
+  },
+  {
+    "Country": "Comoros",
+    "Total_Plastic_Waste_MT": 0.02,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.4,
+    "Per_Capita_Waste_KG": 22.7,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 8e-05,
+    "Material_Valuation_USD_M": 0.068
+  },
+  {
+    "Country": "Mauritius",
+    "Total_Plastic_Waste_MT": 0.08,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 15.4,
+    "Per_Capita_Waste_KG": 62.8,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.01232,
+    "Material_Valuation_USD_M": 10.472
+  },
+  {
+    "Country": "Seychelles",
+    "Total_Plastic_Waste_MT": 0.01,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 18.9,
+    "Per_Capita_Waste_KG": 101.2,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.0018899999999999998,
+    "Material_Valuation_USD_M": 1.6064999999999998
+  },
+  {
+    "Country": "Cape Verde",
+    "Total_Plastic_Waste_MT": 0.02,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 3.4,
+    "Per_Capita_Waste_KG": 35.6,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00068,
+    "Material_Valuation_USD_M": 0.5780000000000001
+  },
+  {
+    "Country": "Sao Tome and Principe",
+    "Total_Plastic_Waste_MT": 0.01,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.8,
+    "Per_Capita_Waste_KG": 45.2,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 8e-05,
+    "Material_Valuation_USD_M": 0.068
+  },
+  {
+    "Country": "Guinea-Bissau",
+    "Total_Plastic_Waste_MT": 0.04,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.3,
+    "Per_Capita_Waste_KG": 19.8,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00012,
+    "Material_Valuation_USD_M": 0.10200000000000001
+  },
+  {
+    "Country": "Guinea",
+    "Total_Plastic_Waste_MT": 0.08,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.5,
+    "Per_Capita_Waste_KG": 6.0,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.0004,
+    "Material_Valuation_USD_M": 0.34
+  },
+  {
+    "Country": "Sierra Leone",
+    "Total_Plastic_Waste_MT": 0.06,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.4,
+    "Per_Capita_Waste_KG": 7.3,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00024,
+    "Material_Valuation_USD_M": 0.20400000000000001
+  },
+  {
+    "Country": "Liberia",
+    "Total_Plastic_Waste_MT": 0.05,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.2,
+    "Per_Capita_Waste_KG": 9.7,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.0001,
+    "Material_Valuation_USD_M": 0.085
+  },
+  {
+    "Country": "Ivory Coast",
+    "Total_Plastic_Waste_MT": 0.18,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 1.2,
+    "Per_Capita_Waste_KG": 6.7,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00216,
+    "Material_Valuation_USD_M": 1.836
+  },
+  {
+    "Country": "Ghana",
+    "Total_Plastic_Waste_MT": 0.22,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 4.5,
+    "Per_Capita_Waste_KG": 7.0,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.009899999999999999,
+    "Material_Valuation_USD_M": 8.415
+  },
+  {
+    "Country": "Togo",
+    "Total_Plastic_Waste_MT": 0.07,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.8,
+    "Per_Capita_Waste_KG": 8.3,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.0005600000000000001,
+    "Material_Valuation_USD_M": 0.47600000000000003
+  },
+  {
+    "Country": "Benin",
+    "Total_Plastic_Waste_MT": 0.09,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.6,
+    "Per_Capita_Waste_KG": 7.3,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00054,
+    "Material_Valuation_USD_M": 0.459
+  },
+  {
+    "Country": "Mali",
+    "Total_Plastic_Waste_MT": 0.12,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.3,
+    "Per_Capita_Waste_KG": 5.8,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.00035999999999999997,
+    "Material_Valuation_USD_M": 0.306
+  },
+  {
+    "Country": "Burkina Faso",
+    "Total_Plastic_Waste_MT": 0.14,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.4,
+    "Per_Capita_Waste_KG": 6.5,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.0005600000000000001,
+    "Material_Valuation_USD_M": 0.47600000000000003
+  },
+  {
+    "Country": "Niger",
+    "Total_Plastic_Waste_MT": 0.11,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.2,
+    "Per_Capita_Waste_KG": 4.4,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.00022,
+    "Material_Valuation_USD_M": 0.187
+  },
+  {
+    "Country": "Chad",
+    "Total_Plastic_Waste_MT": 0.09,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.1,
+    "Per_Capita_Waste_KG": 5.4,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 8.999999999999999e-05,
+    "Material_Valuation_USD_M": 0.0765
+  },
+  {
+    "Country": "Central African Republic",
+    "Total_Plastic_Waste_MT": 0.04,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.2,
+    "Per_Capita_Waste_KG": 8.1,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 8e-05,
+    "Material_Valuation_USD_M": 0.068
+  },
+  {
+    "Country": "Cameroon",
+    "Total_Plastic_Waste_MT": 0.19,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 1.2,
+    "Per_Capita_Waste_KG": 7.0,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00228,
+    "Material_Valuation_USD_M": 1.938
+  },
+  {
+    "Country": "Gabon",
+    "Total_Plastic_Waste_MT": 0.06,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 2.3,
+    "Per_Capita_Waste_KG": 26.4,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00138,
+    "Material_Valuation_USD_M": 1.173
+  },
+  {
+    "Country": "Republic of Congo",
+    "Total_Plastic_Waste_MT": 0.08,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.9,
+    "Per_Capita_Waste_KG": 14.2,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00072,
+    "Material_Valuation_USD_M": 0.612
+  },
+  {
+    "Country": "Democratic Republic of Congo",
+    "Total_Plastic_Waste_MT": 0.24,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.4,
+    "Per_Capita_Waste_KG": 2.6,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.00096,
+    "Material_Valuation_USD_M": 0.8160000000000001
+  },
+  {
+    "Country": "Eritrea",
+    "Total_Plastic_Waste_MT": 0.05,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.3,
+    "Per_Capita_Waste_KG": 13.9,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00015000000000000001,
+    "Material_Valuation_USD_M": 0.1275
+  },
+  {
+    "Country": "Djibouti",
+    "Total_Plastic_Waste_MT": 0.03,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 1.1,
+    "Per_Capita_Waste_KG": 29.7,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00033,
+    "Material_Valuation_USD_M": 0.28049999999999997
+  },
+  {
+    "Country": "Senegal",
+    "Total_Plastic_Waste_MT": 0.16,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 1.8,
+    "Per_Capita_Waste_KG": 9.4,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00288,
+    "Material_Valuation_USD_M": 2.448
+  },
+  {
+    "Country": "Gambia",
+    "Total_Plastic_Waste_MT": 0.02,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.5,
+    "Per_Capita_Waste_KG": 8.1,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.0001,
+    "Material_Valuation_USD_M": 0.085
+  },
+  {
+    "Country": "Mauritania",
+    "Total_Plastic_Waste_MT": 0.07,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.4,
+    "Per_Capita_Waste_KG": 14.8,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00028000000000000003,
+    "Material_Valuation_USD_M": 0.23800000000000002
+  },
+  {
+    "Country": "Western Sahara",
+    "Total_Plastic_Waste_MT": 0.01,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.2,
+    "Per_Capita_Waste_KG": 18.5,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 2e-05,
+    "Material_Valuation_USD_M": 0.017
+  },
+  {
+    "Country": "Moldova",
+    "Total_Plastic_Waste_MT": 0.28,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 12.3,
+    "Per_Capita_Waste_KG": 69.7,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.034440000000000005,
+    "Material_Valuation_USD_M": 29.274000000000004
+  },
+  {
+    "Country": "Albania",
+    "Total_Plastic_Waste_MT": 0.31,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 15.6,
+    "Per_Capita_Waste_KG": 107.9,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.04836,
+    "Material_Valuation_USD_M": 41.106
+  },
+  {
+    "Country": "North Macedonia",
+    "Total_Plastic_Waste_MT": 0.29,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 17.8,
+    "Per_Capita_Waste_KG": 139.2,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.05162,
+    "Material_Valuation_USD_M": 43.877
+  },
+  {
+    "Country": "Bosnia and Herzegovina",
+    "Total_Plastic_Waste_MT": 0.34,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 13.2,
+    "Per_Capita_Waste_KG": 104.5,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.04488,
+    "Material_Valuation_USD_M": 38.148
+  },
+  {
+    "Country": "Kosovo",
+    "Total_Plastic_Waste_MT": 0.21,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 8.9,
+    "Per_Capita_Waste_KG": 115.7,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.018690000000000002,
+    "Material_Valuation_USD_M": 15.886500000000002
+  },
+  {
+    "Country": "Georgia",
+    "Total_Plastic_Waste_MT": 0.33,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 11.2,
+    "Per_Capita_Waste_KG": 88.3,
+    "Coastal_Waste_Risk": "Medium",
+    "Recycled_Waste_MT": 0.03696,
+    "Material_Valuation_USD_M": 31.416
+  },
+  {
+    "Country": "Armenia",
+    "Total_Plastic_Waste_MT": 0.28,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 9.8,
+    "Per_Capita_Waste_KG": 94.2,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.027440000000000003,
+    "Material_Valuation_USD_M": 23.324
+  },
+  {
+    "Country": "Kyrgyzstan",
+    "Total_Plastic_Waste_MT": 0.25,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 4.5,
+    "Per_Capita_Waste_KG": 37.8,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.01125,
+    "Material_Valuation_USD_M": 9.5625
+  },
+  {
+    "Country": "Tajikistan",
+    "Total_Plastic_Waste_MT": 0.22,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 3.2,
+    "Per_Capita_Waste_KG": 22.7,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.00704,
+    "Material_Valuation_USD_M": 5.984
+  },
+  {
+    "Country": "Turkmenistan",
+    "Total_Plastic_Waste_MT": 0.35,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 2.1,
+    "Per_Capita_Waste_KG": 57.3,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.00735,
+    "Material_Valuation_USD_M": 6.2475
+  },
+  {
+    "Country": "Uzbekistan",
+    "Total_Plastic_Waste_MT": 0.42,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 3.4,
+    "Per_Capita_Waste_KG": 12.3,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.014280000000000001,
+    "Material_Valuation_USD_M": 12.138000000000002
+  },
+  {
+    "Country": "Nepal",
+    "Total_Plastic_Waste_MT": 0.38,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 5.6,
+    "Per_Capita_Waste_KG": 12.8,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.021279999999999997,
+    "Material_Valuation_USD_M": 18.087999999999997
+  },
+  {
+    "Country": "Bhutan",
+    "Total_Plastic_Waste_MT": 0.05,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 12.3,
+    "Per_Capita_Waste_KG": 64.2,
+    "Coastal_Waste_Risk": "Low",
+    "Recycled_Waste_MT": 0.006150000000000001,
+    "Material_Valuation_USD_M": 5.227500000000001
+  },
+  {
+    "Country": "Maldives",
+    "Total_Plastic_Waste_MT": 0.04,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 3.2,
+    "Per_Capita_Waste_KG": 72.8,
+    "Coastal_Waste_Risk": "Very_High",
+    "Recycled_Waste_MT": 0.00128,
+    "Material_Valuation_USD_M": 1.088
+  },
+  {
+    "Country": "Brunei",
+    "Total_Plastic_Waste_MT": 0.12,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 8.9,
+    "Per_Capita_Waste_KG": 269.4,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.01068,
+    "Material_Valuation_USD_M": 9.078
+  },
+  {
+    "Country": "East Timor",
+    "Total_Plastic_Waste_MT": 0.06,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 2.3,
+    "Per_Capita_Waste_KG": 44.7,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00138,
+    "Material_Valuation_USD_M": 1.173
+  },
+  {
+    "Country": "Papua New Guinea",
+    "Total_Plastic_Waste_MT": 0.15,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 1.2,
+    "Per_Capita_Waste_KG": 16.5,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.0018,
+    "Material_Valuation_USD_M": 1.53
+  },
+  {
+    "Country": "Solomon Islands",
+    "Total_Plastic_Waste_MT": 0.03,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.8,
+    "Per_Capita_Waste_KG": 42.9,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00024,
+    "Material_Valuation_USD_M": 0.20400000000000001
+  },
+  {
+    "Country": "Vanuatu",
+    "Total_Plastic_Waste_MT": 0.02,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 1.1,
+    "Per_Capita_Waste_KG": 63.8,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00022000000000000003,
+    "Material_Valuation_USD_M": 0.18700000000000003
+  },
+  {
+    "Country": "New Caledonia",
+    "Total_Plastic_Waste_MT": 0.04,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 23.4,
+    "Per_Capita_Waste_KG": 138.6,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00936,
+    "Material_Valuation_USD_M": 7.956
+  },
+  {
+    "Country": "Fiji",
+    "Total_Plastic_Waste_MT": 0.07,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 6.7,
+    "Per_Capita_Waste_KG": 76.9,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.004690000000000001,
+    "Material_Valuation_USD_M": 3.9865000000000004
+  },
+  {
+    "Country": "Samoa",
+    "Total_Plastic_Waste_MT": 0.01,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 4.5,
+    "Per_Capita_Waste_KG": 49.8,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00045,
+    "Material_Valuation_USD_M": 0.3825
+  },
+  {
+    "Country": "Tonga",
+    "Total_Plastic_Waste_MT": 0.01,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 3.2,
+    "Per_Capita_Waste_KG": 92.7,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00032,
+    "Material_Valuation_USD_M": 0.272
+  },
+  {
+    "Country": "Kiribati",
+    "Total_Plastic_Waste_MT": 0.01,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 2.1,
+    "Per_Capita_Waste_KG": 82.4,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00021,
+    "Material_Valuation_USD_M": 0.17850000000000002
+  },
+  {
+    "Country": "Marshall Islands",
+    "Total_Plastic_Waste_MT": 0.01,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 1.8,
+    "Per_Capita_Waste_KG": 168.5,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00018,
+    "Material_Valuation_USD_M": 0.153
+  },
+  {
+    "Country": "Micronesia",
+    "Total_Plastic_Waste_MT": 0.01,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 1.5,
+    "Per_Capita_Waste_KG": 86.3,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00015,
+    "Material_Valuation_USD_M": 0.1275
+  },
+  {
+    "Country": "Palau",
+    "Total_Plastic_Waste_MT": 0.01,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 12.3,
+    "Per_Capita_Waste_KG": 437.2,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.0012300000000000002,
+    "Material_Valuation_USD_M": 1.0455
+  },
+  {
+    "Country": "Tuvalu",
+    "Total_Plastic_Waste_MT": 0.01,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 1.2,
+    "Per_Capita_Waste_KG": 833.3,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 0.00012,
+    "Material_Valuation_USD_M": 0.10200000000000001
+  },
+  {
+    "Country": "Nauru",
+    "Total_Plastic_Waste_MT": 0.01,
+    "Main_Sources": "Consumer_Packaging",
+    "Recycling_Rate": 0.9,
+    "Per_Capita_Waste_KG": 927.8,
+    "Coastal_Waste_Risk": "High",
+    "Recycled_Waste_MT": 9e-05,
+    "Material_Valuation_USD_M": 0.0765
+  }
+]
